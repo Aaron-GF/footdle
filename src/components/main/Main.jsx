@@ -5,7 +5,7 @@ import SearchBar from "@/components/main/SearchBar";
 import getPlayers from "@/app/api/searchPlayers";
 
 export default function Main() {
-  const player = getPlayers("Gueye");
+  const player = getPlayers("x");
 
   const handlePlayerSelect = (e) => {
     e.preventDefault();

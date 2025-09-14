@@ -37,9 +37,9 @@ export default function SearchBar({ onPlayerSelect }) {
 
   // Manejar click en jugador
   const handleSelect = (player) => {
-    setQuery(player.name);
-    setResults([]);
     if (onPlayerSelect) onPlayerSelect(player);
+    setQuery("");
+    setResults([]);
   };
 
   return (

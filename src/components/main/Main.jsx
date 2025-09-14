@@ -1,23 +1,19 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import Board from "@/components/main/Board";
 import SearchBar from "@/components/main/SearchBar";
 
-import getPlayers from "@/app/api/searchPlayers";
-
 export default function Main() {
-  const player = getPlayers("x");
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
 
-  const handlePlayerSelect = (e) => {
-    e.preventDefault();
-    getPlayers(player);
+  const handlePlayerSelect = (player) => {
+    setSelectedPlayer(player);
   };
 
   return (
     <main className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 px-2 my-2">
-      <Board player={player}/>
-      
-        <SearchBar player={player} />
-      
+      <Board player={selectedPlayer} />
+      <SearchBar onPlayerSelect={handlePlayerSelect} />
     </main>
   );
 }

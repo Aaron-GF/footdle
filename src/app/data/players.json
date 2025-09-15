@@ -1,0 +1,394 @@
+{
+  "playersData": [
+    {
+      "ID": 1,
+      "Name": "Cristiano Ronaldo",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/1131.png",
+      "Teams": ["Manchester United", "Real Madrid", "Juventus"]
+    },
+    {
+      "ID": 2,
+      "Name": "Lionel Messi",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/2772.png",
+      "Teams": ["Barcelona", "PSG"]
+    },
+    {
+      "ID": 3,
+      "Name": "Zlatan Ibrahimović",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3098.png",
+      "Teams": ["AC Milan", "PSG", "Manchester United", "Juventus", "Barcelona"]
+    },
+    {
+      "ID": 4,
+      "Name": "Thiago Alcântara",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4001.png",
+      "Teams": ["Barcelona", "Liverpool"]
+    },
+    {
+      "ID": 5,
+      "Name": "David Beckham",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/2950.png",
+      "Teams": ["Manchester United", "Real Madrid"]
+    },
+    {
+      "ID": 6,
+      "Name": "Samuel Eto'o",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3601.png",
+      "Teams": ["Barcelona", "Inter Milan"]
+    },
+    {
+      "ID": 7,
+      "Name": "Luis Suárez",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3101.png",
+      "Teams": ["Barcelona", "Liverpool"]
+    },
+    {
+      "ID": 9,
+      "Name": "Kaká",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3200.png",
+      "Teams": ["AC Milan", "Real Madrid"]
+    },
+    {
+      "ID": 11,
+      "Name": "Karim Benzema",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3884.png",
+      "Teams": ["Real Madrid", "Lyon"]
+    },
+    {
+      "ID": 12,
+      "Name": "Philippe Coutinho",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3500.png",
+      "Teams": ["Liverpool", "Barcelona"]
+    },
+    {
+      "ID": 13,
+      "Name": "Gareth Bale",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3700.png",
+      "Teams": ["Real Madrid", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 14,
+      "Name": "Thierry Henry",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3800.png",
+      "Teams": ["Arsenal", "Barcelona"]
+    },
+    {
+      "ID": 15,
+      "Name": "Paul Pogba",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3400.png",
+      "Teams": ["Manchester United", "Juventus"]
+    },
+    {
+      "ID": 16,
+      "Name": "Robin van Persie",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3501.png",
+      "Teams": ["Manchester United", "Arsenal"]
+    },
+    {
+      "ID": 17,
+      "Name": "Mesut Özil",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3602.png",
+      "Teams": ["Arsenal", "Real Madrid"]
+    },
+    {
+      "ID": 18,
+      "Name": "Samuel Umtiti",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3701.png",
+      "Teams": ["Barcelona", "Lyon"]
+    },
+    {
+      "ID": 19,
+      "Name": "Cesc Fàbregas",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3801.png",
+      "Teams": ["Arsenal", "Barcelona"]
+    },
+    {
+      "ID": 20,
+      "Name": "Edinson Cavani",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/3900.png",
+      "Teams": ["PSG", "Manchester United"]
+    },
+    {
+      "ID": 21,
+      "Name": "Neymar Jr",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4000.png",
+      "Teams": ["Barcelona", "PSG"]
+    },
+    {
+      "ID": 22,
+      "Name": "Gianluigi Buffon",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4100.png",
+      "Teams": ["Juventus", "PSG"]
+    },
+    {
+      "ID": 23,
+      "Name": "Robert Lewandowski",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4200.png",
+      "Teams": ["Bayern Munich", "Borussia Dortmund", "Barcelona"]
+    },
+    {
+      "ID": 24,
+      "Name": "Franck Ribéry",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4300.png",
+      "Teams": ["Bayern Munich", "AC Milan"]
+    },
+    {
+      "ID": 25,
+      "Name": "Arjen Robben",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4400.png",
+      "Teams": ["Bayern Munich", "Real Madrid"]
+    },
+    {
+      "ID": 26,
+      "Name": "Eden Hazard",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4500.png",
+      "Teams": ["Chelsea", "Real Madrid"]
+    },
+    {
+      "ID": 27,
+      "Name": "Thibaut Courtois",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4600.png",
+      "Teams": ["Chelsea", "Real Madrid"]
+    },
+    {
+      "ID": 28,
+      "Name": "Paulinho",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4700.png",
+      "Teams": ["Barcelona", "Tottenham"]
+    },
+    {
+      "ID": 29,
+      "Name": "Roberto Firmino",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4800.png",
+      "Teams": ["Liverpool", "Barcelona"]
+    },
+    {
+      "ID": 30,
+      "Name": "Sadio Mané",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/4900.png",
+      "Teams": ["Liverpool", "Bayern Munich"]
+    },
+    {
+      "ID": 31,
+      "Name": "Mohamed Salah",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5000.png",
+      "Teams": ["Liverpool", "Roma", "Chelsea"]
+    },
+    {
+      "ID": 32,
+      "Name": "Raheem Sterling",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5100.png",
+      "Teams": ["Manchester City", "Liverpool"]
+    },
+    {
+      "ID": 33,
+      "Name": "Edgar Davids",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5200.png",
+      "Teams": ["Juventus", "Barcelona"]
+    },
+    {
+      "ID": 34,
+      "Name": "Andrea Pirlo",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5300.png",
+      "Teams": ["Juventus", "AC Milan"]
+    },
+    {
+      "ID": 35,
+      "Name": "Roberto Carlos",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5400.png",
+      "Teams": ["Real Madrid", "Inter Milan"]
+    },
+    {
+      "ID": 37,
+      "Name": "Gerard Piqué",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5600.png",
+      "Teams": ["Barcelona", "Manchester United"]
+    },
+    {
+      "ID": 39,
+      "Name": "Iker Casillas",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5800.png",
+      "Teams": ["Real Madrid", "Porto"]
+    },
+    {
+      "ID": 40,
+      "Name": "Sergio Ramos",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/5900.png",
+      "Teams": ["Real Madrid", "PSG"]
+    },
+    {
+      "ID": 41,
+      "Name": "Luis Figo",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/6000.png",
+      "Teams": ["Real Madrid", "Barcelona"]
+    },
+    {
+      "ID": 42,
+      "Name": "Dani Alves",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/6100.png",
+      "Teams": ["Barcelona", "Juventus"]
+    },
+    {
+      "ID": 45,
+      "Name": "Samuel Khedira",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/6400.png",
+      "Teams": ["Real Madrid", "Juventus"]
+    },
+    {
+      "ID": 46,
+      "Name": "Mario Mandžukić",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/6500.png",
+      "Teams": ["Juventus", "Atlético Madrid"]
+    },
+    {
+      "ID": 47,
+      "Name": "Ángel Di María",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/6600.png",
+      "Teams": ["Real Madrid", "PSG"]
+    },
+    {
+      "ID": 50,
+      "Name": "Fernando Torres",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/6900.png",
+      "Teams": ["Liverpool", "Atlético Madrid", "Chelsea"]
+    },
+    {
+      "ID": 51,
+      "Name": "César Azpilicueta",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7000.png",
+      "Teams": ["Chelsea", "Marseille"]
+    },
+    {
+      "ID": 52,
+      "Name": "Jorginho",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7100.png",
+      "Teams": ["Chelsea", "Napoli"]
+    },
+    {
+      "ID": 53,
+      "Name": "N'Golo Kanté",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7200.png",
+      "Teams": ["Chelsea", "Leicester City"]
+    },
+    {
+      "ID": 54,
+      "Name": "Timo Werner",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7300.png",
+      "Teams": ["Chelsea", "RB Leipzig"]
+    },
+    {
+      "ID": 56,
+      "Name": "Álvaro Morata",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7500.png",
+      "Teams": ["Real Madrid", "Juventus", "Chelsea", "Atlético Madrid"]
+    },
+    {
+      "ID": 57,
+      "Name": "Gonzalo Higuaín",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7501.png",
+      "Teams": ["Real Madrid", "Juventus", "Chelsea", "AC Milan"]
+    },
+    {
+      "ID": 58,
+      "Name": "James Rodríguez",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7502.png",
+      "Teams": ["Real Madrid", "Bayern Munich"]
+    },
+    {
+      "ID": 59,
+      "Name": "Alexis Sánchez",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7503.png",
+      "Teams": ["Barcelona", "Arsenal", "Inter Milan", "Manchester United"]
+    },
+    {
+      "ID": 60,
+      "Name": "David Luiz",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7504.png",
+      "Teams": ["Chelsea", "PSG", "Arsenal"]
+    },
+    {
+      "ID": 61,
+      "Name": "Pierre-Emerick Aubameyang",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7505.png",
+      "Teams": ["Arsenal", "Chelsea", "Barcelona", "Dortmund"]
+    },
+    {
+      "ID": 62,
+      "Name": "Henrikh Mkhitaryan",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7506.png",
+      "Teams": ["Manchester United", "Arsenal", "Inter Milan"]
+    },
+    {
+      "ID": 63,
+      "Name": "Keylor Navas",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7507.png",
+      "Teams": ["Real Madrid", "PSG"]
+    },
+    {
+      "ID": 64,
+      "Name": "Juan Mata",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7508.png",
+      "Teams": ["Chelsea", "Manchester United"]
+    },
+    {
+      "ID": 65,
+      "Name": "Álvaro Arbeloa",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7509.png",
+      "Teams": ["Real Madrid", "Liverpool"]
+    },
+    {
+      "ID": 66,
+      "Name": "Mario Götze",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7510.png",
+      "Teams": ["Bayern Munich", "Borussia Dortmund"]
+    },
+    {
+      "ID": 67,
+      "Name": "Ivan Perišić",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7511.png",
+      "Teams": ["Bayern Munich", "Inter Milan"]
+    },
+    {
+      "ID": 68,
+      "Name": "Miralem Pjanić",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7512.png",
+      "Teams": ["Juventus", "Barcelona"]
+    },
+    {
+      "ID": 69,
+      "Name": "Leonardo Bonucci",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7513.png",
+      "Teams": ["Juventus", "AC Milan"]
+    },
+    {
+      "ID": 70,
+      "Name": "Blaise Matuidi",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7514.png",
+      "Teams": ["Juventus", "PSG"]
+    },
+    {
+      "ID": 71,
+      "Name": "Álvaro Negredo",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7515.png",
+      "Teams": ["Real Madrid", "Manchester City"]
+    },
+    {
+      "ID": 72,
+      "Name": "Javier Saviola",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7516.png",
+      "Teams": ["Barcelona", "Real Madrid"]
+    },
+    {
+      "ID": 73,
+      "Name": "Pepe",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7517.png",
+      "Teams": ["Real Madrid", "Porto"]
+    },
+    {
+      "ID": 74,
+      "Name": "Carlos Tevez",
+      "ImageURL": "https://cdn.soccerwiki.org/images/player/7518.png",
+      "Teams": ["Manchester United", "Juventus"]
+    }
+  ]
+}

@@ -531,11 +531,6 @@
       "Teams": ["Atlético Madrid", "Benfica"]
     },
     {
-      "ID": 98,
-      "Name": "Phil Foden",
-      "Teams": ["Manchester City"]
-    },
-    {
       "ID": 99,
       "Name": "Bernardo Silva",
       "Teams": ["Manchester City", "Monaco", "Benfica", "Porto"]
@@ -1115,6 +1110,21 @@
       "ID": 217,
       "Name": "Coutinho",
       "Teams": ["Liverpool", "Barcelona", "Bayern Munich"]
+    },
+    {
+      "ID": 218,
+      "Name": "Romelu Lukaku",
+      "Teams": ["Chelsea", "Manchester United", "Inter Milan", "Roma"]
+    },
+    {
+      "ID": 219,
+      "Name": "Gabriel Jesus",
+      "Teams": ["Manchester City", "Arsenal"]
+    },
+    {
+      "ID": 220,
+      "Name": "Sergio Reguilón",
+      "Teams": ["Real Madrid", "Tottenham Hotspur", "Atlético Madrid"]
     }
   ]
 }

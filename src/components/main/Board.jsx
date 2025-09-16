@@ -1,20 +1,21 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Shirt, RefreshCw } from "lucide-react";
-import teams from "@/app/data/teams";
+import teamsData from "@/app/data/teams";
 import { shuffleArray } from "@/lib/utils/array";
 
 export default function Board({
-  boardPlayers = {},
+  players = {},
   selectedCell = null,
-  onCellSelect, 
-  onReset
+  onCellSelect,
+  onReset,
+  setTeamsMap,
 }) {
-  const [boardTeams, setBoardTeams] = useState([]);
+  const [teams, setTeams] = useState([]);
 
   // shuffle teams only on client, avoid error on render
   useEffect(() => {
-    setBoardTeams(shuffleArray(teams));
+    setTeams(shuffleArray(teamsData));
   }, []);
 
   // generate board
@@ -24,28 +25,37 @@ export default function Board({
   board[0] = { type: "reset" };
 
   // First row → shields
-  if (boardTeams.length >= 3) {
+  if (teams.length >= 3) {
     [1, 2, 3].forEach(
-      (i, idx) => (board[i] = { type: "team", content: boardTeams[idx].logo })
+      (i, idx) =>
+        (board[i] = {
+          type: "team",
+          content: teams[idx].logo,
+          teamName: teams[idx].name,
+        })
     );
   }
 
   // First column → shields (avoid first logo corner)
-  if (boardTeams.length >= 6) {
+  if (teams.length >= 6) {
     [4, 8, 12].forEach(
       (i, idx) =>
-        (board[i] = { type: "team", content: boardTeams[idx + 3].logo })
+        (board[i] = {
+          type: "team",
+          content: teams[idx + 3].logo,
+          teamName: teams[idx + 3].name,
+        })
     );
   }
 
   // Others → players from boardPlayers or placeholders
   for (let i = 0; i < 16; i++) {
     if (!board[i]) {
-      if (boardPlayers[i]) {
+      if (players[i]) {
         board[i] = {
           type: "player",
-          name: boardPlayers[i].Name,
-          teams: boardPlayers[i].Teams,
+          name: players[i].Name,
+          teams: players[i].Teams,
         };
       } else {
         board[i] = { type: "placeholder" };
@@ -53,9 +63,21 @@ export default function Board({
     }
   }
 
+  useEffect(() => {
+    if (!teams.length || typeof setTeamsMap !== "function") return;
+    const map = {};
+    [1, 2, 3].forEach((i, idx) => {
+      if (teams[idx]) map[i] = teams[idx].name;
+    });
+    [4, 8, 12].forEach((i, idx) => {
+      if (teams[idx + 3]) map[i] = teams[idx + 3].name;
+    });
+    setTeamsMap(map);
+  }, [teams, setTeamsMap]);
+
   // reset handler event
   const handleReset = () => {
-    setBoardTeams(shuffleArray(teams));
+    setTeams(shuffleArray(teams));
     if (typeof onCellSelect === "function") onCellSelect(null); // deselect cell
     if (typeof onReset === "function") onReset(); // clear players on parent
   };
@@ -69,7 +91,7 @@ export default function Board({
         // agregar clases visuales cuando está seleccionada
         const wrapperClass =
           "aspect-square flex items-center justify-center transition relative " +
-          (isSelected ? "ring-4 ring-offset-2 ring-yellow-300" : "");
+          (isSelected ? "bg-color1/20 rounded-xl border border-color1" : "");
 
         // solo casillas placeholder/player responderán al click para seleccionar
         const clickable = cell.type === "placeholder" || cell.type === "player";
@@ -93,7 +115,7 @@ export default function Board({
                   e.stopPropagation();
                   handleReset();
                 }}
-                className="w-6/10 h-6/10 flex items-center justify-center bg-bg text-main rounded-2xl hover:bg-color1/80 transition cursor-pointer"
+                className="w-6/10 h-6/10 flex items-center justify-center bg-bg text-main rounded-xl hover:bg-color1/80 transition cursor-pointer"
               >
                 <RefreshCw className="size-5/10" />
               </button>
@@ -109,7 +131,7 @@ export default function Board({
 
             {cell.type === "player" && (
               <div className="w-full h-full flex items-center justify-center bg-color1 rounded-2xl p-1">
-                <span className="text-sm font-bold text-bg text-center">
+                <span className="text-md font-bold text-center text-main">
                   {cell.name}
                 </span>
               </div>

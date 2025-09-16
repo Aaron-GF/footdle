@@ -2,7 +2,7 @@ const teams = [
   // LaLiga
   { name: "Real Madrid", logo: "/teams-shields/real-madrid.png" },
   { name: "FC Barcelona", logo: "/teams-shields/barcelona.png" },
-  { name: "Atletico Madrid", logo: "/teams-shields/atletico-madrid.png" },
+  { name: "Atlético Madrid", logo: "/teams-shields/atletico-madrid.png" },
 
   // Premier League
   { name: "Liverpool", logo: "/teams-shields/liverpool.png" },

@@ -20,7 +20,7 @@ const teams = [
   { name: "Inter Milan", logo: "/teams-shields/inter-milan.png" },
 
   // Bundesliga
-  /* { name: "RB Leipzig", logo: "/teams-shields/leipzig.png" }, */
+  { name: "RB Leipzig", logo: "/teams-shields/leipzig.png" }, 
   { name: "Bayern Munich", logo: "/teams-shields/bayern-munich.png" },
   { name: "Borussia Dortmund", logo: "/teams-shields/borussia-dortmund.png" },
 
@@ -40,5 +40,3 @@ const teams = [
 ];
 
 export default teams;
-
-

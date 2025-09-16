@@ -1,39 +1,29 @@
-import playersData from "@/app/data/players.json";
-import teams from "@/app/data/teams.js";
-import { normalizeString } from "@/lib/utils/string";
+const { normalizeString } = require("../lib/utils/string");
+const playersData = require("../app/data/players.json").playersData;
+const teams = require("../app/data/teams.js");
 
 describe("Combinaciones de equipos", () => {
   it("debería haber al menos un jugador para cada combinación posible de equipos distintos", () => {
     const missingCombinations = [];
 
-    // recorre todas las combinaciones posibles de equipos distintos
-    teams.forEach((teamA, i) => {
+    for (let i = 0; i < teams.length; i++) {
       for (let j = i + 1; j < teams.length; j++) {
-        const teamB = teams[j];
-        const normalizedA = normalizeString(teamA.name);
-        const normalizedB = normalizeString(teamB.name);
+        const teamA = normalizeString(teams[i].name);
+        const teamB = normalizeString(teams[j].name);
 
-        // busca un jugador que pertenezca a ambos equipos
         const player = playersData.find((p) => {
           if (!p.Teams) return false;
           const playerTeams = p.Teams.map(normalizeString);
-          return playerTeams.includes(normalizedA) && playerTeams.includes(normalizedB);
+          return playerTeams.includes(teamA) && playerTeams.includes(teamB);
         });
 
         if (!player) {
-          missingCombinations.push([teamA.name, teamB.name]);
+          console.log(`❌ No encontrado: ${teams[i].name} + ${teams[j].name}`);
+          missingCombinations.push([teams[i].name, teams[j].name]);
         } else {
-          // imprime un jugador ejemplo por combinación
-          console.log(`Ejemplo para ${teamA.name} + ${teamB.name}: ${player.Name}`);
+          console.log(`✅ Ejemplo: ${teams[i].name} + ${teams[j].name} -> ${player.Name}`);
         }
       }
-    });
-
-    if (missingCombinations.length > 0) {
-      console.warn(
-        "Faltan jugadores para las siguientes combinaciones de equipos:",
-        missingCombinations
-      );
     }
 
     expect(missingCombinations.length).toBe(0);

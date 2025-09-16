@@ -3,26 +3,31 @@ import teams from "@/app/data/teams.js";
 import { normalizeString } from "@/lib/utils/string";
 
 describe("Combinaciones de equipos", () => {
-  it("debería haber jugadores para todas las combinaciones posibles de equipos distintos", () => {
+  it("debería haber al menos un jugador para cada combinación posible de equipos distintos", () => {
     const missingCombinations = [];
 
     // recorre todas las combinaciones posibles de equipos distintos
-    for (let i = 0; i < teams.length; i++) {
+    teams.forEach((teamA, i) => {
       for (let j = i + 1; j < teams.length; j++) {
-        const teamA = normalizeString(teams[i].name);
-        const teamB = normalizeString(teams[j].name);
+        const teamB = teams[j];
+        const normalizedA = normalizeString(teamA.name);
+        const normalizedB = normalizeString(teamB.name);
 
-        // busca si existe algún jugador que pertenezca a ambos equipos
-        const found = playersData.some((player) => {
-          const playerTeams = player.Teams.map(normalizeString);
-          return playerTeams.includes(teamA) && playerTeams.includes(teamB);
+        // busca un jugador que pertenezca a ambos equipos
+        const player = playersData.find((p) => {
+          if (!p.Teams) return false;
+          const playerTeams = p.Teams.map(normalizeString);
+          return playerTeams.includes(normalizedA) && playerTeams.includes(normalizedB);
         });
 
-        if (!found) {
-          missingCombinations.push([teams[i].name, teams[j].name]);
+        if (!player) {
+          missingCombinations.push([teamA.name, teamB.name]);
+        } else {
+          // imprime un jugador ejemplo por combinación
+          console.log(`Ejemplo para ${teamA.name} + ${teamB.name}: ${player.Name}`);
         }
       }
-    }
+    });
 
     if (missingCombinations.length > 0) {
       console.warn(

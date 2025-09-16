@@ -1,8 +1,17 @@
+const nextJest = require('next/jest');
+
+const createJestConfig = nextJest({
+  dir: './', // raíz de tu proyecto Next.js
+});
+
 /** @type {import('jest').Config} */
-module.exports = {
-  testEnvironment: 'jsdom',
+const customJestConfig = {
+  testEnvironment: 'jsdom', // puedes usar node si solo haces pruebas de lógica
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@/app/(.*)$': '<rootDir>/app/$1',
+    '^@/lib/(.*)$': '<rootDir>/lib/$1',
   },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'], 
 };
+
+module.exports = createJestConfig(customJestConfig);

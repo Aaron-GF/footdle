@@ -8,7 +8,7 @@
     {
       "ID": 2,
       "Name": "Lionel Messi",
-      "Teams": ["Barcelona", "PSG"]
+      "Teams": ["FC Barcelona", "PSG"]
     },
     {
       "ID": 3,
@@ -18,7 +18,7 @@
         "PSG",
         "Manchester United",
         "Juventus",
-        "Barcelona",
+        "FC Barcelona",
         "Inter Milan",
         "Ajax"
       ]
@@ -26,7 +26,7 @@
     {
       "ID": 4,
       "Name": "Thiago Alcântara",
-      "Teams": ["Barcelona", "Liverpool", "Bayern Munich", "Lyon"]
+      "Teams": ["FC Barcelona", "Liverpool", "Bayern Munich", "Lyon"]
     },
     {
       "ID": 5,
@@ -36,12 +36,12 @@
     {
       "ID": 6,
       "Name": "Samuel Eto'o",
-      "Teams": ["Barcelona", "Inter Milan", "Chelsea"]
+      "Teams": ["FC Barcelona", "Inter Milan", "Chelsea"]
     },
     {
       "ID": 7,
       "Name": "Luis Suárez",
-      "Teams": ["Barcelona", "Liverpool", "Atlético Madrid", "Ajax"]
+      "Teams": ["FC Barcelona", "Liverpool", "Atlético Madrid", "Ajax"]
     },
     {
       "ID": 8,
@@ -56,7 +56,7 @@
     {
       "ID": 10,
       "Name": "Philippe Coutinho",
-      "Teams": ["Liverpool", "Barcelona", "Bayern Munich"]
+      "Teams": ["Liverpool", "FC Barcelona", "Bayern Munich"]
     },
     {
       "ID": 11,
@@ -66,7 +66,7 @@
     {
       "ID": 12,
       "Name": "Thierry Henry",
-      "Teams": ["Arsenal", "Barcelona"]
+      "Teams": ["Arsenal", "FC Barcelona"]
     },
     {
       "ID": 13,
@@ -86,12 +86,12 @@
     {
       "ID": 16,
       "Name": "Samuel Umtiti",
-      "Teams": ["Barcelona", "Lyon", "Roma"]
+      "Teams": ["FC Barcelona", "Lyon", "Roma"]
     },
     {
       "ID": 17,
       "Name": "Cesc Fàbregas",
-      "Teams": ["Arsenal", "Barcelona", "Chelsea", "Monaco"]
+      "Teams": ["Arsenal", "FC Barcelona", "Chelsea", "Monaco"]
     },
     {
       "ID": 18,
@@ -101,7 +101,7 @@
     {
       "ID": 19,
       "Name": "Neymar Jr",
-      "Teams": ["Barcelona", "PSG"]
+      "Teams": ["FC Barcelona", "PSG"]
     },
     {
       "ID": 20,
@@ -111,7 +111,7 @@
     {
       "ID": 21,
       "Name": "Robert Lewandowski",
-      "Teams": ["Bayern Munich", "Borussia Dortmund", "Barcelona"]
+      "Teams": ["Bayern Munich", "Borussia Dortmund", "FC Barcelona"]
     },
     {
       "ID": 22,
@@ -136,12 +136,12 @@
     {
       "ID": 26,
       "Name": "Paulinho",
-      "Teams": ["Barcelona", "Tottenham"]
+      "Teams": ["FC Barcelona", "Tottenham"]
     },
     {
       "ID": 27,
       "Name": "Roberto Firmino",
-      "Teams": ["Liverpool", "Barcelona"]
+      "Teams": ["Liverpool", "FC Barcelona"]
     },
     {
       "ID": 28,
@@ -163,11 +163,11 @@
       "Name": "Edgar Davids",
       "Teams": [
         "Juventus",
-        "Barcelona",
+        "FC Barcelona",
         "Ajax",
         "Inter Milan",
-        "Milan",
-        "Tottenham"
+        "AC Milan",
+        "Tottenham Hotspur"
       ]
     },
     {
@@ -188,7 +188,7 @@
     {
       "ID": 35,
       "Name": "Gerard Piqué",
-      "Teams": ["Barcelona", "Manchester United"]
+      "Teams": ["FC Barcelona", "Manchester United"]
     },
     {
       "ID": 36,
@@ -203,12 +203,12 @@
     {
       "ID": 38,
       "Name": "Luis Figo",
-      "Teams": ["Real Madrid", "Barcelona", "Inter Milan", "Sporting CP"]
+      "Teams": ["Real Madrid", "FC Barcelona", "Inter Milan", "Sporting CP"]
     },
     {
       "ID": 39,
       "Name": "Dani Alves",
-      "Teams": ["Barcelona", "Juventus", "PSG"]
+      "Teams": ["FC Barcelona", "Juventus", "PSG"]
     },
     {
       "ID": 40,
@@ -218,7 +218,7 @@
     {
       "ID": 41,
       "Name": "Luka Modrić",
-      "Teams": ["Real Madrid", "Tottenham Hotspur", "Milan"]
+      "Teams": ["Real Madrid", "Tottenham Hotspur", "AC Milan"]
     },
     {
       "ID": 42,
@@ -232,8 +232,8 @@
         "Juventus",
         "Atlético Madrid",
         "Bayern Munich",
-        "Dortmund",
-        "Milan"
+        "Borussia Dortmund",
+        "AC Milan"
       ]
     },
     {
@@ -250,7 +250,7 @@
     {
       "ID": 45,
       "Name": "Fernando Torres",
-      "Teams": ["Liverpool", "Atlético Madrid", "Chelsea", "Milan"]
+      "Teams": ["Liverpool", "Atlético Madrid", "Chelsea", "AC Milan"]
     },
     {
       "ID": 46,
@@ -296,7 +296,7 @@
       "ID": 54,
       "Name": "Alexis Sánchez",
       "Teams": [
-        "Barcelona",
+        "FC Barcelona",
         "Arsenal",
         "Inter Milan",
         "Manchester United",
@@ -312,7 +312,7 @@
     {
       "ID": 56,
       "Name": "Pierre-Emerick Aubameyang",
-      "Teams": ["Arsenal", "Chelsea", "Barcelona", "Dortmund"]
+      "Teams": ["Arsenal", "Chelsea", "FC Barcelona", "Borussia Dortmund"]
     },
     {
       "ID": 57,
@@ -322,7 +322,7 @@
         "Arsenal",
         "Inter Milan",
         "Roma",
-        "Dortmund"
+        "Borussia Dortmund"
       ]
     },
     {
@@ -353,7 +353,7 @@
     {
       "ID": 63,
       "Name": "Miralem Pjanić",
-      "Teams": ["Juventus", "Barcelona", "Lyon", "Roma"]
+      "Teams": ["Juventus", "FC Barcelona", "Lyon", "Roma"]
     },
     {
       "ID": 64,
@@ -373,7 +373,13 @@
     {
       "ID": 67,
       "Name": "Javier Saviola",
-      "Teams": ["Barcelona", "Real Madrid", "Mónaco", "Benfica", "River Plate"]
+      "Teams": [
+        "FC Barcelona",
+        "Real Madrid",
+        "Mónaco",
+        "Benfica",
+        "River Plate"
+      ]
     },
     {
       "ID": 68,
@@ -428,7 +434,7 @@
     {
       "ID": 77,
       "Name": "Sergio Agüero",
-      "Teams": ["Manchester City", "Atlético Madrid", "Barcelona"]
+      "Teams": ["Manchester City", "Atlético Madrid", "FC Barcelona"]
     },
     {
       "ID": 78,
@@ -458,7 +464,7 @@
     {
       "ID": 83,
       "Name": "Riquelme",
-      "Teams": ["Barcelona", "Boca Juniors"]
+      "Teams": ["FC Barcelona", "Boca Juniors"]
     },
     {
       "ID": 84,
@@ -483,7 +489,7 @@
     {
       "ID": 88,
       "Name": "Ronaldo Nazário",
-      "Teams": ["Real Madrid", "Barcelona", "Inter Milan", "AC Milan"]
+      "Teams": ["Real Madrid", "FC Barcelona", "Inter Milan", "AC Milan"]
     },
     {
       "ID": 89,
@@ -493,7 +499,7 @@
     {
       "ID": 90,
       "Name": "David Villa",
-      "Teams": ["Barcelona", "Atlético Madrid"]
+      "Teams": ["FC Barcelona", "Atlético Madrid"]
     },
     {
       "ID": 91,
@@ -518,12 +524,12 @@
     {
       "ID": 95,
       "Name": "Frenkie de Jong",
-      "Teams": ["Barcelona", "Ajax"]
+      "Teams": ["FC Barcelona", "Ajax"]
     },
     {
       "ID": 96,
       "Name": "Antoine Griezmann",
-      "Teams": ["Barcelona", "Atlético Madrid"]
+      "Teams": ["FC Barcelona", "Atlético Madrid"]
     },
     {
       "ID": 97,
@@ -588,7 +594,7 @@
     {
       "ID": 110,
       "Name": "Pedro Rodríguez",
-      "Teams": ["Barcelona", "Chelsea"]
+      "Teams": ["FC Barcelona", "Chelsea"]
     },
     {
       "ID": 111,
@@ -608,7 +614,7 @@
     {
       "ID": 114,
       "Name": "Kevin-Prince Boateng",
-      "Teams": ["AC Milan", "Barcelona"]
+      "Teams": ["AC Milan", "FC Barcelona"]
     },
     {
       "ID": 115,
@@ -623,7 +629,7 @@
     {
       "ID": 117,
       "Name": "Ricardo Quaresma",
-      "Teams": ["Barcelona", "Chelsea", "Inter Milan"]
+      "Teams": ["FC Barcelona", "Chelsea", "Inter Milan"]
     },
     {
       "ID": 118,
@@ -638,7 +644,7 @@
     {
       "ID": 120,
       "Name": "Bojan Krkić",
-      "Teams": ["Barcelona", "Roma"]
+      "Teams": ["FC Barcelona", "Roma"]
     },
     {
       "ID": 121,
@@ -648,7 +654,7 @@
     {
       "ID": 122,
       "Name": "Alex Song",
-      "Teams": ["Arsenal", "Barcelona"]
+      "Teams": ["Arsenal", "FC Barcelona"]
     },
     {
       "ID": 123,
@@ -713,7 +719,7 @@
     {
       "ID": 135,
       "Name": "Wojciech Szczęsny",
-      "Teams": ["Arsenal", "Juventus", "Roma", "Barcelona"]
+      "Teams": ["Arsenal", "Juventus", "Roma", "FC Barcelona"]
     },
     {
       "ID": 136,
@@ -753,7 +759,7 @@
     {
       "ID": 143,
       "Name": "Patrick Kluivert",
-      "Teams": ["Barcelona", "AC Milan", "Roma"]
+      "Teams": ["FC Barcelona", "AC Milan", "Roma"]
     },
     {
       "ID": 144,
@@ -798,7 +804,7 @@
     {
       "ID": 152,
       "Name": "Jeremy Mathieu",
-      "Teams": ["Barcelona", "Sporting CP", "Lyon"]
+      "Teams": ["FC Barcelona", "Sporting CP", "Lyon"]
     },
     {
       "ID": 153,
@@ -808,12 +814,12 @@
     {
       "ID": 154,
       "Name": "Maxwell",
-      "Teams": ["Barcelona", "PSG", "Inter Milan", "Ajax"]
+      "Teams": ["FC Barcelona", "PSG", "Inter Milan", "Ajax"]
     },
     {
       "ID": 155,
       "Name": "Thomas Vermaelen",
-      "Teams": ["Arsenal", "Barcelona", "Roma"]
+      "Teams": ["Arsenal", "FC Barcelona", "Roma"]
     },
     {
       "ID": 156,
@@ -833,7 +839,7 @@
     {
       "ID": 159,
       "Name": "Seydou Keita",
-      "Teams": ["Barcelona", "Roma", "Lyon", "Dortmund"]
+      "Teams": ["FC Barcelona", "Roma", "Lyon", "Borussia Dortmund"]
     },
     {
       "ID": 160,
@@ -843,7 +849,7 @@
     {
       "ID": 161,
       "Name": "Memphis Depay",
-      "Teams": ["Manchester United", "Lyon", "Barcelona", "Atlético Madrid"]
+      "Teams": ["Manchester United", "Lyon", "FC Barcelona", "Atlético Madrid"]
     },
     {
       "ID": 162,
@@ -888,12 +894,12 @@
     {
       "ID": 170,
       "Name": "Yaya Touré",
-      "Teams": ["Barcelona", "Manchester City", "Monaco"]
+      "Teams": ["FC Barcelona", "Manchester City", "Monaco"]
     },
     {
       "ID": 171,
       "Name": "Gerard Deulofeu",
-      "Teams": ["Barcelona", "AC Milan"]
+      "Teams": ["FC Barcelona", "AC Milan"]
     },
     {
       "ID": 172,
@@ -918,17 +924,17 @@
     {
       "ID": 176,
       "Name": "André Gomes",
-      "Teams": ["Barcelona", "Benfica"]
+      "Teams": ["FC Barcelona", "Benfica"]
     },
     {
       "ID": 177,
       "Name": "Claudio Bravo",
-      "Teams": ["Barcelona", "Manchester City"]
+      "Teams": ["FC Barcelona", "Manchester City"]
     },
     {
       "ID": 178,
       "Name": "Eric Abidal",
-      "Teams": ["Barcelona", "Lyon", "Monaco", "Chelsea"]
+      "Teams": ["FC Barcelona", "Lyon", "Monaco", "Chelsea"]
     },
     {
       "ID": 179,
@@ -1007,14 +1013,24 @@
       "Teams": ["Tottenham Hotspur", "PSG"]
     },
     {
+      "ID": 196,
+      "Name": "Cold Palmer",
+      "Teams": ["Manchester City", "Chelsea"]
+    },
+    {
       "ID": 197,
-      "Name": "Moussa Sissoko",
-      "Teams": ["Tottenham Hotspur", "Newcastle United", "Watford"]
+      "Name": "Harry Kane",
+      "Teams": ["Tottenham Hotspur", "Bayern Munich"]
     },
     {
       "ID": 198,
       "Name": "Toby Alderweireld",
-      "Teams": ["Tottenham Hotspur", "Atlético Madrid", "Benfica"]
+      "Teams": [
+        "Tottenham Hotspur",
+        "Atlético Madrid",
+        "Benfica",
+        "Borussia Dortmund"
+      ]
     },
     {
       "ID": 199,
@@ -1044,7 +1060,7 @@
     {
       "ID": 204,
       "Name": "Victor Valdés",
-      "Teams": ["Barcelona", "Manchester United"]
+      "Teams": ["FC Barcelona", "Manchester United"]
     },
     {
       "ID": 205,
@@ -1054,12 +1070,12 @@
     {
       "ID": 206,
       "Name": "Frank de Boer",
-      "Teams": ["Barcelona", "Ajax", "Inter Milan"]
+      "Teams": ["FC Barcelona", "Ajax", "Inter Milan"]
     },
     {
       "ID": 207,
       "Name": "Ronald Koeman",
-      "Teams": ["Barcelona", "Ajax"]
+      "Teams": ["FC Barcelona", "Ajax"]
     },
     {
       "ID": 208,
@@ -1074,12 +1090,12 @@
     {
       "ID": 210,
       "Name": "Diego Armando Maradona",
-      "Teams": ["Napoli", "Barcelona"]
+      "Teams": ["Napoli", "FC Barcelona"]
     },
     {
       "ID": 211,
       "Name": "Johan Cruyff",
-      "Teams": ["Barcelona", "Ajax"]
+      "Teams": ["FC Barcelona", "Ajax"]
     },
     {
       "ID": 212,
@@ -1104,12 +1120,12 @@
     {
       "ID": 216,
       "Name": "Jordi Alba",
-      "Teams": ["Barcelona", "Valencia"]
+      "Teams": ["FC Barcelona", "Valencia"]
     },
     {
       "ID": 217,
       "Name": "Coutinho",
-      "Teams": ["Liverpool", "Barcelona", "Bayern Munich"]
+      "Teams": ["Liverpool", "FC Barcelona", "Bayern Munich"]
     },
     {
       "ID": 218,
@@ -1125,6 +1141,96 @@
       "ID": 220,
       "Name": "Sergio Reguilón",
       "Teams": ["Real Madrid", "Tottenham Hotspur", "Atlético Madrid"]
+    },
+    {
+      "ID": 221,
+      "Name": "Fábio Coentrão",
+      "Teams": ["Real Madrid", "Benfica", "Sporting CP"]
+    },
+    {
+      "ID": 222,
+      "Name": "Ángel Mena",
+      "Teams": ["Lyon", "Sporting CP", "Benfica"]
+    },
+    {
+      "ID": 223,
+      "Name": "Rúben Dias",
+      "Teams": ["Manchester City", "Benfica"]
+    },
+    {
+      "ID": 224,
+      "Name": "Ederson Moraes",
+      "Teams": ["Manchester City", "Benfica"]
+    },
+    {
+      "ID": 225,
+      "Name": "João Moutinho",
+      "Teams": ["Monaco", "Porto", "Benfica"]
+    },
+    {
+      "ID": 226,
+      "Name": "Renato Sanches",
+      "Teams": ["Bayern Munich", "Lyon", "PSG", "Benfica"]
+    },
+    {
+      "ID": 227,
+      "Name": "Rafael Leão",
+      "Teams": ["AC Milan", "Sporting CP"]
+    },
+    {
+      "ID": 228,
+      "Name": "Giuseppe Rossi",
+      "Teams": ["AC Milan", "Manchester United"]
+    },
+    {
+      "ID": 229,
+      "Name": "moussa dembele",
+      "Teams": ["Tottenham Hotspur", "Lyon", "Atlético Madrid", "Roma"]
+    },
+    {
+      "ID": 230,
+      "Name": "Kalidou Koulibaly",
+      "Teams": ["Chelsea", "Napoli"]
+    },
+    {
+      "ID": 231,
+      "Name": "Jose Callejón",
+      "Teams": ["Napoli", "Real Madrid"]
+    },
+    {
+      "ID": 232,
+      "Name": "Nathan Aké",
+      "Teams": ["Chelsea", "Manchester City", "Napoli"]
+    },
+    {
+      "ID": 233,
+      "Name": "Marcos Reus",
+      "Teams": ["Borussia Dortmund", "Bayern Munich"]
+    },
+    {
+      "ID": 234,
+      "Name": "Giovanni Dos Santos",
+      "Teams": ["FC Barcelona", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 235,
+      "Name": "Alexis Mac Allister",
+      "Teams": ["Liverpool", "Napoli"]
+    },
+    {
+      "ID": 236,
+      "Name": "Genaro Gattuso",
+      "Teams": ["AC Milan", "Napoli"]
+    },
+    {
+      "ID": 237,
+      "Name": "Ousmané Dembélé",
+      "Teams": ["FC Barcelona", "Borussia Dortmund", "PSG"]
+    },
+    {
+      "ID": 238,
+      "Name": "Royston Drenthe",
+      "Teams": ["Real Madrid", "PSG"]
     }
   ]
 }

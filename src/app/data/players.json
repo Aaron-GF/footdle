@@ -71,7 +71,7 @@
     {
       "ID": 13,
       "Name": "Paul Pogba",
-      "Teams": ["Manchester United", "Juventus", "PSG"]
+      "Teams": ["Manchester United", "Juventus"]
     },
     {
       "ID": 14,
@@ -255,7 +255,7 @@
     {
       "ID": 46,
       "Name": "César Azpilicueta",
-      "Teams": ["Chelsea", "Marseille"]
+      "Teams": ["Chelsea", "Marseille", "Atlético Madrid"]
     },
     {
       "ID": 47,
@@ -312,7 +312,14 @@
     {
       "ID": 56,
       "Name": "Pierre-Emerick Aubameyang",
-      "Teams": ["Arsenal", "Chelsea", "FC Barcelona", "Borussia Dortmund"]
+      "Teams": [
+        "Arsenal",
+        "Chelsea",
+        "FC Barcelona",
+        "Borussia Dortmund",
+        "Monaco",
+        "Marseille"
+      ]
     },
     {
       "ID": 57,
@@ -839,7 +846,7 @@
     {
       "ID": 159,
       "Name": "Seydou Keita",
-      "Teams": ["FC Barcelona", "Roma", "Lyon", "Borussia Dortmund"]
+      "Teams": ["FC Barcelona", "Roma", "Marseille"]
     },
     {
       "ID": 160,
@@ -949,13 +956,7 @@
     {
       "ID": 181,
       "Name": "Danilo",
-      "Teams": [
-        "Real Madrid",
-        "Manchester City",
-        "Juventus",
-        "Porto",
-        "Benfica"
-      ]
+      "Teams": ["Real Madrid", "Manchester City", "Juventus", "Porto"]
     },
     {
       "ID": 182,
@@ -1085,7 +1086,7 @@
     {
       "ID": 209,
       "Name": "Claude Makélélé",
-      "Teams": ["Real Madrid", "Chelsea", "PSG"]
+      "Teams": ["Real Madrid", "Chelsea", "PSG", "Marseille"]
     },
     {
       "ID": 210,
@@ -1231,6 +1232,362 @@
       "ID": 238,
       "Name": "Royston Drenthe",
       "Teams": ["Real Madrid", "PSG"]
+    },
+    {
+      "ID": 239,
+      "Name": "Thiago Motta",
+      "Teams": ["Inter Milan", "PSG", "FC Barcelona", "Atlético Madrid"]
+    },
+    {
+      "ID": 240,
+      "Name": "Sol Campbell",
+      "Teams": ["Arsenal", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 241,
+      "Name": "Layvin Kurzawa",
+      "Teams": ["PSG", "Monaco"]
+    },
+    {
+      "ID": 242,
+      "Name": "Trend Alexander-Arnold",
+      "Teams": ["Liverpool", "Real Madrid"]
+    },
+    {
+      "ID": 243,
+      "Name": "Mauro Icardi",
+      "Teams": ["Inter Milan", "PSG"]
+    },
+    {
+      "ID": 244,
+      "Name": "Javier Pastore",
+      "Teams": ["PSG", "Roma"]
+    },
+    {
+      "ID": 245,
+      "Name": "Álvaro Saborío",
+      "Teams": ["Real Madrid", "Mónaco", "Benfica"]
+    },
+    {
+      "ID": 246,
+      "Name": "Klass-Jan Huntelaar",
+      "Teams": ["AC Milan", "Ajax", "Real Madrid"]
+    },
+    {
+      "ID": 247,
+      "Name": "Ronaldinho",
+      "Teams": ["FC Barcelona", "AC Milan", "PSG"]
+    },
+    {
+      "ID": 248,
+      "Name": "Ludovic Giuly",
+      "Teams": ["FC Barcelona", "Monaco", "Roma", "Lyon", "PSG"]
+    },
+    {
+      "ID": 249,
+      "Name": "Wesley Sneijder",
+      "Teams": ["Inter Milan", "Real Madrid", "Ajax"]
+    },
+    {
+      "ID": 250,
+      "Name": "Marquinhos",
+      "Teams": ["PSG", "Roma", "AC Milan"]
+    },
+    {
+      "ID": 251,
+      "Name": "Rafael van der Vaart",
+      "Teams": ["Tottenham Hotspur", "Real Madrid", "Ajax"]
+    },
+    {
+      "ID": 252,
+      "Name": "Jude Bellingham",
+      "Teams": ["Real Madrid", "Borussia Dortmund"]
+    },
+    {
+      "ID": 253,
+      "Name": "Rui Patrício",
+      "Teams": ["Sporting CP", "Roma"]
+    },
+    {
+      "ID": 254,
+      "Name": "Alberto Aquilani",
+      "Teams": ["Roma", "Liverpool", "AC Milan", "Juventus", "Sporting CP"]
+    },
+    {
+      "ID": 255,
+      "Name": "Eric Dier",
+      "Teams": ["Tottenham Hotspur", "Sporting CP", "Bayern Munich", "Monaco"]
+    },
+    {
+      "ID": 256,
+      "Name": "Nani",
+      "Teams": ["Manchester United", "Sporting CP"]
+    },
+    {
+      "ID": 257,
+      "Name": "Danijel Pranjić",
+      "Teams": ["Bayern Munich", "Sporting CP"]
+    },
+    {
+      "ID": 258,
+      "Name": "Tinga",
+      "Teams": ["Borussia Dortmund", "Sporting CP"]
+    },
+    {
+      "ID": 259,
+      "Name": "Paulo Sousa",
+      "Teams": ["Juventus", "Borussia Dortmund", "Sporting CP"]
+    },
+    {
+      "ID": 260,
+      "Name": "Julio César",
+      "Teams": ["Inter Milan", "Benfica"]
+    },
+    {
+      "ID": 261,
+      "Name": "Anderson",
+      "Teams": ["Manchester United", "FC Porto"]
+    },
+    {
+      "ID": 262,
+      "Name": "Alessio Cerci",
+      "Teams": ["AC Milan", "Roma", "Atletico Madrid"]
+    },
+    {
+      "ID": 263,
+      "Name": "Deco",
+      "Teams": ["FC Barcelona", "Chelsea", "Porto"]
+    },
+    {
+      "ID": 264,
+      "Name": "Mario Hermoso",
+      "Teams": ["Atlético Madrid", "Roma"]
+    },
+    {
+      "ID": 265,
+      "Name": "Hélder Postiga",
+      "Teams": ["Porto", "Sporting CP"]
+    },
+    {
+      "ID": 266,
+      "Name": "Ricardo Carvalho",
+      "Teams": ["Porto", "Chelsea", "Real Madrid"]
+    },
+    {
+      "ID": 267,
+      "Name": "João Pinto",
+      "Teams": ["Benfica", "Sporting CP"]
+    },
+    {
+      "ID": 268,
+      "Name": "Nélson Semedo",
+      "Teams": ["FC Barcelona", "Benfica"]
+    },
+    {
+      "ID": 269,
+      "Name": "Rui Costa",
+      "Teams": ["AC Milan", "Fiorentina"]
+    },
+    {
+      "ID": 270,
+      "Name": "Gianluca Zambrotta",
+      "Teams": ["FC Barcelona", "Juventus", "AC Milan"]
+    },
+    {
+      "ID": 271,
+      "Name": "Andre Schürrle",
+      "Teams": ["Chelsea", "Borussia Dortmund"]
+    },
+    {
+      "ID": 272,
+      "Name": "Christian Pulisic",
+      "Teams": ["Chelsea", "Borussia Dortmund", "AC Milan"]
+    },
+    {
+      "ID": 273,
+      "Name": "Claudio Pizzarro",
+      "Teams": ["Bayern Munich", "Chelsea"]
+    },
+    {
+      "ID": 274,
+      "Name": "Axel Witsel",
+      "Teams": ["Borussia Dortmund", "Benfica", "Atlético Madrid"]
+    },
+    {
+      "ID": 275,
+      "Name": "Nicolas Otamendi",
+      "Teams": ["Manchester City", "Porto", "Benfica"]
+    },
+    {
+      "ID": 276,
+      "Name": "Joe Cole",
+      "Teams": ["Chelsea", "Liverpool"]
+    },
+    {
+      "ID": 277,
+      "Name": "James Milner",
+      "Teams": ["Liverpool", "Manchester City"]
+    },
+    {
+      "ID": 278,
+      "Name": "Jürgen Klinsmann",
+      "Teams": ["Tottenham Hotspur", "FC Barcelona"]
+    },
+    {
+      "ID": 279,
+      "Name": "Darwin Núñez",
+      "Teams": ["Benfica", "Liverpool"]
+    },
+    {
+      "ID": 280,
+      "Name": "Leroy Sané",
+      "Teams": ["Bayern Munich", "Manchester City", "Chelsea"]
+    },
+    {
+      "ID": 281,
+      "Name": "Lazar Marković",
+      "Teams": ["Liverpool", "Benfica", "Sporting CP"]
+    },
+    {
+      "ID": 282,
+      "Name": "Divock Origi",
+      "Teams": ["Liverpool", "AC Milan"]
+    },
+    {
+      "ID": 283,
+      "Name": "Carlos Vinícius",
+      "Teams": ["Napoli", "Benfica", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 284,
+      "Name": "Eidur Gudjohnsen",
+      "Teams": ["Chelsea", "FC Barcelona", "Monaco", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 285,
+      "Name": "William Gallas",
+      "Teams": ["Arsenal", "Chelsea", "Tottenham Hotspur", "Marseille"]
+    },
+    {
+      "ID": 286,
+      "Name": "Kyle Walker",
+      "Teams": ["Manchester City", "Tottenham Hotspur", "AC Milan"]
+    },
+    {
+      "ID": 287,
+      "Name": "Joe Hart",
+      "Teams": ["Manchester City", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 288,
+      "Name": "Emmanuel Adebayor",
+      "Teams": [
+        "Arsenal",
+        "Manchester City",
+        "Tottenham Hotspur",
+        "Real Madrid",
+        "Monaco"
+      ]
+    },
+    {
+      "ID": 289,
+      "Name": "Yossi Benayoun",
+      "Teams": ["Liverpool", "Chelsea", "Arsenal"]
+    },
+    {
+      "ID": 290,
+      "Name": "Vedrán Ćorluka",
+      "Teams": ["Manchester City", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 291,
+      "Name": "Pau Lopez",
+      "Teams": ["Roma", "Tottenham Hotspur", "Marseille"]
+    },
+    {
+      "ID": 292,
+      "Name": "Patrice Evra",
+      "Teams": ["Manchester United", "Juventus", "Marseille", "Monaco"]
+    },
+    {
+      "ID": 293,
+      "Name": "Laurent Blanc",
+      "Teams": ["Napoli", "Marseille", "Inter Milan", "FC Barcelona"]
+    },
+    {
+      "ID": 294,
+      "Name": "Mathieu Valbuena",
+      "Teams": ["Lyon", "Marseille"]
+    },
+    {
+      "ID": 295,
+      "Name": "Dario Šimić",
+      "Teams": ["AC Milan", "Inter Milan"]
+    },
+    {
+      "ID": 296,
+      "Name": "Mats Hummels",
+      "Teams": ["Borussia Dortmund", "Bayern Munich", "Roma"]
+    },
+    {
+      "ID": 297,
+      "Name": "Marcel Sabitzer",
+      "Teams": [
+        "RB Leipzig",
+        "Bayern Munich",
+        "Manchester United",
+        "Borussia Dortmund"
+      ]
+    },
+    {
+      "ID": 298,
+      "Name": "Adnan Januzaj",
+      "Teams": ["Manchester United", "Borussia Dortmund"]
+    },
+    {
+      "ID": 299,
+      "Name": "Paulo Dybala",
+      "Teams": ["Juventus", "AS Roma"]
+    },
+    {
+      "ID": 300,
+      "Name": "Juan Cuadrado",
+      "Teams": ["Juventus", "Chelsea", "Inter Milan"]
+    },
+    {
+      "ID": 301,
+      "Name": "Dani Olmo",
+      "Teams": ["RB Leipzig", "FC Barcelona"]
+    },
+    {
+      "ID": 302,
+      "Name": "Christopher Nkunku",
+      "Teams": ["RB Leipzig", "Chelsea", "PSG", "AC Milan"]
+    },
+    {
+      "ID": 303,
+      "Name": "Arthur Vermeeren",
+      "Teams": ["RB Leipzig", "Atlético Madrid", "Marseille"]
+    },
+    {
+      "ID": 304,
+      "Name": "Angeliño",
+      "Teams": ["Roma", "Manchester City", "RB Leipzig"]
+    },
+    {
+      "ID": 305,
+      "Name": "Serge Gnabry",
+      "Teams": ["Bayern Munich", "Arsenal"]
+    },
+    {
+      "ID": 306,
+      "Name": "Kingsley Coman",
+      "Teams": ["Bayern Munich", "Juventus", "PSG"]
+    },
+    {
+      "ID": 307,
+      "Name": "Ilaix Moriba",
+      "Teams": ["RB Leipzig", "FC Barcelona"]
     }
   ]
 }

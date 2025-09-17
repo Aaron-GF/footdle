@@ -1,6 +1,8 @@
-const { normalizeString } = require("../lib/utils/string");
-const playersData = require("../app/data/players.json").playersData;
-const teams = require("../app/data/teams.js");
+import { normalizeString } from "@/lib/utils/string.js";
+import data from "@/app/data/players.json";
+import teams from "@/app/data/teams.js";
+
+const playersData = data.playersData || [];
 
 describe("Combinaciones de equipos", () => {
   it("debería haber al menos un jugador para cada combinación posible de equipos distintos", () => {

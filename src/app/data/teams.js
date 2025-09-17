@@ -31,7 +31,7 @@ const teams = [
   { name: "Lyon", logo: "/teams-shields/o-lyon.png" },
 
   // Primeira Liga
-  { name: "Porto", logo: "/teams-shields/oporto.png" },
+  /* { name: "Porto", logo: "/teams-shields/oporto.png" }, */
   { name: "Benfica", logo: "/teams-shields/benfica.png" },
   { name: "Sporting CP", logo: "/teams-shields/sporting-portugal.png" },
 

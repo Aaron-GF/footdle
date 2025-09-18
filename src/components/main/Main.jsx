@@ -63,7 +63,7 @@ export default function Main() {
   };
 
   return (
-    <main className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 px-2 my-2">
+    <main className="flex flex-col lg:flex-row justify-center items-center gap-10 md:gap-20 px-2 my-10">
       <Board
         players={players}
         selectedCell={selectedCell}

@@ -83,7 +83,7 @@ export default function Board({
   };
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 bg-main w-full max-w-md rounded-md gap-1 p-2">
+    <div className="grid grid-cols-4 grid-rows-4 bg-main xs:w-9/10 max-w-lg rounded-md gap-1 p-2">
       {board.map((cell, i) => {
         // is this cell selected?
         const isSelected = selectedCell === i;

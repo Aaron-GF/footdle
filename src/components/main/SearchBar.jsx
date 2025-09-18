@@ -34,7 +34,7 @@ export default function SearchBar({ onPlayerSelect, inputRef }) {
   }
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 mb-50">
       <form
         onSubmit={(e) => e.preventDefault()}
         className="flex items-center gap-3 bg-color1 p-3 rounded-4xl w-full cursor-pointer"

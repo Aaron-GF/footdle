@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Board from "@/components/main/Board";
 import SearchBar from "@/components/main/SearchBar";
 import { normalizeString } from "@/lib/utils/string";
@@ -9,9 +9,14 @@ export default function Main() {
   const [players, setPlayers] = useState({}); // players on board: { [index]: playerObject }
   const [teamsMap, setTeamsMap] = useState({}); // store teams for every cell
 
+  const inputRef = useRef(null);
+
   // click on board cell -> toggle selection
   const handleCellSelect = (index) => {
     setSelectedCell((prev) => (prev === index ? null : index));
+    if(inputRef?.current) {
+      inputRef.current.focus();
+    }
   };
 
   // when serchbar return player
@@ -66,7 +71,7 @@ export default function Main() {
         onReset={handleReset}
         setTeamsMap={setTeamsMap}
       />
-      <SearchBar onPlayerSelect={handlePlayerSelect} />
+      <SearchBar onPlayerSelect={handlePlayerSelect} inputRef={inputRef} />
     </main>
   );
 }

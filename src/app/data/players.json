@@ -969,7 +969,7 @@
     {
       "ID": 179,
       "Name": "João Cancelo",
-      "Teams": ["Manchester City", "Juventus", "Inter Milan", "Benfica"]
+      "Teams": ["Manchester City", "Juventus", "Inter Milan", "Benfica", "FC Barcelona", "Bayern Munich"]
     },
     {
       "ID": 180,
@@ -1049,12 +1049,7 @@
     {
       "ID": 198,
       "Name": "Toby Alderweireld",
-      "Teams": [
-        "Tottenham Hotspur",
-        "Atlético Madrid",
-        "Benfica",
-        "Borussia Dortmund"
-      ]
+      "Teams": ["Tottenham Hotspur", "Atlético Madrid", "Ajax"]
     },
     {
       "ID": 199,
@@ -1432,8 +1427,8 @@
     },
     {
       "ID": 271,
-      "Name": "Andre Schürrle",
-      "Teams": ["Chelsea", "Borussia Dortmund"]
+      "Name": "Frank Lampard",
+      "Teams": ["Chelsea", "Manchester City"]
     },
     {
       "ID": 272,
@@ -1959,8 +1954,18 @@
     },
     {
       "ID": 373,
-      "Name": "Leon Goretzka",
-      "Teams": ["Schalke 04", "Bayern Munich", "Liverpool"]
+      "Name": "Thomas Meunier",
+      "Teams": ["PSG", "Borussia Dortmund"]
+    },
+    {
+      "ID": 374,
+      "Name": "Achraf Hakimi",
+      "Teams": ["PSG", "Real Madrid", "Borussia Dortmund", "Inter Milan"]
+    },
+    {
+      "ID": 375,
+      "Name": "John Heitinga",
+      "Teams": ["Atlético Madrid", "Ajax"]
     }
   ]
 }

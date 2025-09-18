@@ -12,7 +12,7 @@ export default function Home() {
           correspondiente, actual o historico, que ha jugado en ambos equipos.
         </p>
         <p className="italic">
-          Existe un boton para reportar errores en caso de encontrar algun fallo con un jugador que no corresponde, datos erroneos en jugadores o jugadores que crees que deberían incluirse en la base de datos.
+          Existe un boton para reportar errores en caso de encontrar algun fallo con un jugador que no corresponde, datos erroneos o jugadores que crees que deberían incluirse en la base de datos.
         </p>
         <p className="italic">Ademas esta la opción de ayuda, para en caso de no ser capaz de completar el juego, mostrar las posibles opciones de jugadores de la casilla seleccionada</p>
       </aside>

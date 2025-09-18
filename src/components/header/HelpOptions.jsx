@@ -23,7 +23,8 @@ export default function HelpOptions({ selectedCell, playersData, teamsMap }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button disabled={!selectedCell} variant="outline">
+        <Button disabled={selectedCell === null}
+ variant="outline">
           Ayuda
         </Button>
       </AlertDialogTrigger>

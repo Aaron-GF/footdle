@@ -57,7 +57,7 @@ export default function SearchBar({ onPlayerSelect, inputRef }) {
           {filteredPlayers.length === 0 ? (
             <p className="p-3 text-bg font-bold text-sm">Sin resultados</p>
           ) : (
-            filteredPlayers.map((player, index) => (
+            filteredPlayers.map((player) => (
               <div
                 key={player.ID}
                 onClick={() => handleSelect(player)}

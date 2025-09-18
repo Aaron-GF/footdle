@@ -138,7 +138,7 @@ export default function Board({
             )}
 
             {cell.type === "placeholder" && (
-              <Shirt className="size-full bg-green-700 text-main/40 cursor-pointer p-2 sm:p-4 hover:bg-color1/20 rounded-md transition duration-200" />
+              <Shirt className="size-full bg-green-700 text-main/40 cursor-pointer p-2 md:p-4 hover:opacity-60 rounded-md transition duration-200" />
             )}
           </div>
         );

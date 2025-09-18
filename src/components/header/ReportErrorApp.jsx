@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import {
   AlertDialog,
@@ -18,17 +18,17 @@ export default function ReportErrorApp() {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button variant="outline">Reportar error</Button>
+        <Button variant="outline" className="text-red-600">Reportar error</Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Reportar un error</AlertDialogTitle>
+          <AlertDialogTitle>⚠️ Reportar un error</AlertDialogTitle>
         </AlertDialogHeader>
         <form action="https://api.web3forms.com/submit" method="POST">
           <input
             type="hidden"
             name="access_key"
-            value={process.env.ACCESS_KEY}
+            value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY}
           ></input>
           <input
             type="hidden"
@@ -39,14 +39,15 @@ export default function ReportErrorApp() {
             placeholder="Describe el error..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            className="outline-none w-full min-h-30 bg-stone-900 rounded-lg p-2"
             required
           />
           <input type="checkbox" name="botcheck" className="hidden"></input>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancelar</AlertDialogCancel>
-            <AlertDialogAction type="submit">Reportar</AlertDialogAction>
-          </AlertDialogFooter>
         </form>
+        <AlertDialogFooter>
+          <AlertDialogCancel>Cancelar</AlertDialogCancel>
+          <AlertDialogAction>Reportar</AlertDialogAction>
+        </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
   );

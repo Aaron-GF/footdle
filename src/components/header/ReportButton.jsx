@@ -1,8 +1,6 @@
 "use client";
-import { useRef } from 'react';
 import {
   AlertDialog,
-  AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogFooter,
@@ -14,8 +12,6 @@ import { Button } from "@/components/ui/button";
 import ReportForm from "@/components/ReportForm";
 
 export default function ReportErrorApp() {
-  const formRef = useRef();
-
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
@@ -24,13 +20,18 @@ export default function ReportErrorApp() {
         </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
+        {/* botón de cerrar arriba a la derecha */}
+        <AlertDialogCancel
+          className="absolute right-2 top-2 rounded-full hover:bg-stone-200 dark:hover:bg-stone-800 w-3"
+        >
+          ✖
+        </AlertDialogCancel>
         <AlertDialogHeader>
           <AlertDialogTitle>⚠️ Reportar un error</AlertDialogTitle>
         </AlertDialogHeader>
-        <ReportForm ref={formRef}/>
+        <ReportForm />
         <AlertDialogFooter>
           <AlertDialogCancel>Cancelar</AlertDialogCancel>
-          <AlertDialogAction onClick={() => formRef.current?.handleSubmit()}>Enviar</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

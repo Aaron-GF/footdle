@@ -1,13 +1,13 @@
 "use client";
-import React, { forwardRef, useImperativeHandle } from "react";
+import React from "react";
 
-const ReportForm = forwardRef((props, ref) => {
+export default function ReportForm() {
   const [result, setResult] = React.useState("");
-  const formRef = React.useRef();
 
-  const handleSubmit = async () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
     setResult("Enviando....");
-    const formData = new FormData(formRef.current);
+    const formData = new FormData(event.target);
 
     formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
 
@@ -19,30 +19,31 @@ const ReportForm = forwardRef((props, ref) => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("El error ha sido enviado");
-      formRef.current.reset();
+      setResult("Reporte enviado con éxito ✅");
+      event.target.reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
     }
   };
 
-  useImperativeHandle(ref, () => ({
-    handleSubmit,
-  }));
-
   return (
-    <div>
-      <form ref={formRef}>
+    <div className="flex flex-col">
+      <form onSubmit={onSubmit}>
         <textarea
+          name="message"
           placeholder="Describe el problema..."
           className="outline-none w-full min-h-30 bg-stone-900 rounded-lg p-2"
           required
         />
+        <span>{result}</span>
+        <button
+          type="submit"
+          className="bg-white text-black w-full rounded-md h-9 hover:bg-stone-300 font-bold transition duration-200 -mb-3 mt-4"
+        >
+          Enviar
+        </button>
       </form>
-      <span>{result}</span>
     </div>
   );
-});
-
-export default ReportForm;
+}

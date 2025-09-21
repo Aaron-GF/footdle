@@ -2,6 +2,7 @@
 import Board from "@/components/main/Board";
 import { useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
+import { useRouter } from "next/navigation";
 
 export default function WinGame({
   players,
@@ -10,6 +11,8 @@ export default function WinGame({
   onReset,
   setTeamsMap,
 }) {
+  const router = useRouter();
+
   // comprueba cuántos jugadores hay en el tablero
   const isWin = Object.keys(players).length === 9;
 
@@ -26,14 +29,23 @@ export default function WinGame({
         setTeamsMap={setTeamsMap}
       />
 
-      {/* Botón de prueba solo en desarrollo */}
+      {/* Botones solo en desarrollo */}
       {process.env.NODE_ENV === "development" && (
-        <button
-          onClick={() => setTest(prev => !prev)}
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded fixed top-4 right-4 z-50"
-        >
-          Test confetti
-        </button>
+        <div className="fixed top-4 right-4 z-50 flex flex-col gap-2">
+          <button
+            onClick={() => setTest(prev => !prev)}
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+          >
+            Test confetti
+          </button>
+
+          <button
+            onClick={() => router.push("/dev/add-player")}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          >
+            Añadir jugador
+          </button>
+        </div>
       )}
 
       {/* Confeti */}

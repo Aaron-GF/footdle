@@ -64,28 +64,31 @@ export default function Board({
   }
 
   useEffect(() => {
-  if (!teams.length || typeof setTeamsMap !== "function") return;
-  const map = {};
+    if (!teams.length || typeof setTeamsMap !== "function") return;
+    const map = {};
 
-  // cabeceras
-  [1, 2, 3].forEach((i, idx) => { if (teams[idx]) map[i] = teams[idx].name });
-  [4, 8, 12].forEach((i, idx) => { if (teams[idx+3]) map[i] = teams[idx+3].name });
+    // cabeceras
+    [1, 2, 3].forEach((i, idx) => {
+      if (teams[idx]) map[i] = teams[idx].name;
+    });
+    [4, 8, 12].forEach((i, idx) => {
+      if (teams[idx + 3]) map[i] = teams[idx + 3].name;
+    });
 
-  // celdas jugables
-  for (let i = 5; i < 16; i++) {
-    if ([4,8,12].includes(i)) continue; // saltar cabeceras
-    const colIndex = (i % 4) - 1;   // 0..2
-    const rowIndex = Math.floor(i/4) - 1; // 0..2
-    const rowTeam = teams[colIndex]?.name;
-    const colTeam = teams[rowIndex+3]?.name;
-    if (rowTeam && colTeam) {
-      map[i] = { rowTeam, colTeam };
+    // celdas jugables
+    for (let i = 5; i < 16; i++) {
+      if ([4, 8, 12].includes(i)) continue; // saltar cabeceras
+      const colIndex = (i % 4) - 1; // 0..2
+      const rowIndex = Math.floor(i / 4) - 1; // 0..2
+      const rowTeam = teams[colIndex]?.name;
+      const colTeam = teams[rowIndex + 3]?.name;
+      if (rowTeam && colTeam) {
+        map[i] = { rowTeam, colTeam };
+      }
     }
-  }
 
-  setTeamsMap(map);
-}, [teams, setTeamsMap]);
-
+    setTeamsMap(map);
+  }, [teams, setTeamsMap]);
 
   // manejo de eventos reinicio
   const handleReset = () => {
@@ -97,7 +100,6 @@ export default function Board({
   return (
     <div className="grid grid-cols-4 grid-rows-4 bg-main xs:w-9/10 max-w-lg rounded-md gap-1 p-2">
       {board.map((cell, i) => {
-        // is this cell selected?
         const isSelected = selectedCell === i;
 
         // agrega clases visuales cuando la celda está seleccionada

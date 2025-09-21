@@ -2034,6 +2034,16 @@
       "ID": 385,
       "Name": "Scott Mc Tominay",
       "Teams": ["Napoli", "Manchester United"]
+    },
+    {
+      "ID": 386,
+      "Name": "David Alaba",
+      "Teams": ["Real Madrid", "Bayern Munich"]
+    },
+    {
+      "ID": 387,
+      "Name": "Kieran Trippier",
+      "Teams": ["Tottenham Hotspur", "Atlético Madrid"]
     }
   ]
 }

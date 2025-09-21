@@ -1,5 +1,5 @@
 "use client";
-import { useMemo } from "react";
+import { useMemo } from "react"; // evita recalculos pesados en cada render
 import data from "@/app/data/players.json";
 import {
   AlertDialog,
@@ -13,10 +13,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { normalizeString } from "@/lib/utils/string";
 
-const playersData = data.playersData || [];
+const playersData = data.playersData || []; // evita errores si playerData no existe
 
 export default function HelpOptions({ selectedCell, teamsMap }) {
-  // Opciones de jugadores para la celda seleccionada
+  // Filtra jugadores válidos para la celda seleccionada
   const options = useMemo(() => {
   if (selectedCell === null) return [];
 

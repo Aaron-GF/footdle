@@ -1,9 +1,9 @@
 "use client";
 import { useState, useRef } from "react";
-import Board from "@/components/main/Board";
 import SearchBar from "@/components/main/SearchBar";
 import { normalizeString } from "@/lib/utils/string";
 import HelpOptions from "./HelpOptions";
+import WinGame from "@/components/main/WinGame";
 
 export default function Main() {
   const [selectedCell, setSelectedCell] = useState(null); // selected cell index (0..15) or null
@@ -51,7 +51,7 @@ export default function Main() {
 
   return (
     <main className="flex flex-col lg:flex-row justify-center items-center gap-10 md:gap-20 px-2 my-10 lg:mb-20">
-      <Board
+      <WinGame
         players={players}
         selectedCell={selectedCell}
         onCellSelect={handleCellSelect}

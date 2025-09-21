@@ -31,7 +31,7 @@ export default function ReportErrorApp() {
         </AlertDialogHeader>
         <ReportForm />
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancelar</AlertDialogCancel>
+          <AlertDialogCancel className="w-full">Cancelar</AlertDialogCancel>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

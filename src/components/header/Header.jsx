@@ -1,5 +1,5 @@
 import ReportButton from "@/components/header/ReportButton";
-import HelpOptions from "@/components/header/HelpOptions";
+import HelpOptions from "@/components/main/HelpOptions";
 
 export default function Header({ selectedCell, teamsMap, playersData }) {
   return (
@@ -15,11 +15,6 @@ export default function Header({ selectedCell, teamsMap, playersData }) {
         {/* Botón para el envío de errores en el juego */}
         <ReportButton />
         {/* Botón para mostrar opciones de ayuda en el juego*/}
-        <HelpOptions
-          selectedCell={selectedCell}
-          teamsMap={teamsMap}
-          playersData={playersData}
-        />
       </div>
     </header>
   );

@@ -1,5 +1,6 @@
 "use client";
 import { useMemo } from "react";
+import data from "@/app/data/players.json";
 import {
   AlertDialog,
   AlertDialogTrigger,
@@ -10,21 +11,32 @@ import {
   AlertDialogAction,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
+import { normalizeString } from "@/lib/utils/string";
 
-export default function HelpOptions({ selectedCell, playersData, teamsMap }) {
+const playersData = data.playersData || [];
+
+export default function HelpOptions({ selectedCell, teamsMap }) {
   // Opciones de jugadores para la celda seleccionada
   const options = useMemo(() => {
-    if (!selectedCell) return [];
-    const team = teamsMap[selectedCell];
-    if (!team) return [];
-    return playersData.filter(player => player.Teams.includes(team));
-  }, [selectedCell, playersData, teamsMap]);
+  if (selectedCell === null) return [];
+
+  const { rowTeam, colTeam } = teamsMap[selectedCell] || {};
+  if (!rowTeam || !colTeam) return [];
+
+  return playersData.filter((player) => {
+    const normalized = (player.Teams || []).map(normalizeString);
+    return (
+      normalized.includes(normalizeString(rowTeam)) &&
+      normalized.includes(normalizeString(colTeam))
+    );
+  });
+}, [selectedCell, teamsMap]);
 
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button disabled={selectedCell === null}
- variant="outline">
+ variant="outline" className="text-green-500">
           Ayuda
         </Button>
       </AlertDialogTrigger>

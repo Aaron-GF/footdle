@@ -18,13 +18,13 @@ export default function Board({
     setTeams(shuffleArray(teamsData));
   }, []);
 
-  // generate board
+  // genera el tablero
   const board = Array(16).fill(null);
 
-  // First square → reset
+  // Primer casilla → reinicio
   board[0] = { type: "reset" };
 
-  // First row → shields
+  // Primera fila → escudos de equipos
   if (teams.length >= 3) {
     [1, 2, 3].forEach(
       (i, idx) =>
@@ -36,7 +36,7 @@ export default function Board({
     );
   }
 
-  // First column → shields (avoid first logo corner)
+  // Primera columna → escudos de equipos (evita la esquina del boton de reinicio)
   if (teams.length >= 6) {
     [4, 8, 12].forEach(
       (i, idx) =>
@@ -48,7 +48,7 @@ export default function Board({
     );
   }
 
-  // Others → players from boardPlayers or placeholders
+  // Otros → jugadores de los equipos o icono por defecto
   for (let i = 0; i < 16; i++) {
     if (!board[i]) {
       if (players[i]) {
@@ -64,22 +64,34 @@ export default function Board({
   }
 
   useEffect(() => {
-    if (!teams.length || typeof setTeamsMap !== "function") return;
-    const map = {};
-    [1, 2, 3].forEach((i, idx) => {
-      if (teams[idx]) map[i] = teams[idx].name;
-    });
-    [4, 8, 12].forEach((i, idx) => {
-      if (teams[idx + 3]) map[i] = teams[idx + 3].name;
-    });
-    setTeamsMap(map);
-  }, [teams, setTeamsMap]);
+  if (!teams.length || typeof setTeamsMap !== "function") return;
+  const map = {};
 
-  // reset handler event
+  // cabeceras
+  [1, 2, 3].forEach((i, idx) => { if (teams[idx]) map[i] = teams[idx].name });
+  [4, 8, 12].forEach((i, idx) => { if (teams[idx+3]) map[i] = teams[idx+3].name });
+
+  // celdas jugables
+  for (let i = 5; i < 16; i++) {
+    if ([4,8,12].includes(i)) continue; // saltar cabeceras
+    const colIndex = (i % 4) - 1;   // 0..2
+    const rowIndex = Math.floor(i/4) - 1; // 0..2
+    const rowTeam = teams[colIndex]?.name;
+    const colTeam = teams[rowIndex+3]?.name;
+    if (rowTeam && colTeam) {
+      map[i] = { rowTeam, colTeam };
+    }
+  }
+
+  setTeamsMap(map);
+}, [teams, setTeamsMap]);
+
+
+  // manejo de eventos reinicio
   const handleReset = () => {
     setTeams(shuffleArray(teams));
-    if (typeof onCellSelect === "function") onCellSelect(null); // deselect cell
-    if (typeof onReset === "function") onReset(); // clear players on parent
+    onCellSelect?.(null); // deselecciona celda
+    onReset?.(); // clear players on parent
   };
 
   return (
@@ -131,7 +143,7 @@ export default function Board({
 
             {cell.type === "player" && (
               <div className="w-full h-full flex items-center justify-center bg-bg rounded-md p-1">
-                <span className="text-xs md:text-md font-bold text-center text-main">
+                <span className="text-xs md:text-base font-bold text-center text-main">
                   {cell.name}
                 </span>
               </div>

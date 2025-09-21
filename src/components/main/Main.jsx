@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import Board from "@/components/main/Board";
 import SearchBar from "@/components/main/SearchBar";
 import { normalizeString } from "@/lib/utils/string";
+import HelpOptions from "./HelpOptions";
 
 export default function Main() {
   const [selectedCell, setSelectedCell] = useState(null); // selected cell index (0..15) or null
@@ -14,48 +15,34 @@ export default function Main() {
   // click on board cell -> toggle selection
   const handleCellSelect = (index) => {
     setSelectedCell((prev) => (prev === index ? null : index));
-    if(inputRef?.current) {
-      inputRef.current.focus();
-    }
+    inputRef.current?.focus();
   };
 
   // when serchbar return player
   const handlePlayerSelect = (player) => {
-    if (selectedCell === null) {
-      window.alert("Selecciona una casilla antes de asignar un jugador");
-      return;
-    }
+  if (selectedCell === null) {
+    window.alert("Selecciona una casilla antes de asignar un jugador");
+    return;
+  }
 
-    const idx = selectedCell;
+  const { rowTeam, colTeam } = teamsMap[selectedCell] || {};
+  if (!rowTeam || !colTeam) {
+    window.alert("Casilla sin equipos asignados");
+    return;
+  }
 
-    // Determine row team: find which team in first row aligns with this cell
-    const firstRowIndices = [1, 2, 3];
-    const rowTeamIndex = firstRowIndices[(idx % 4) - 1]; // map column to first row
-    const rowTeam = teamsMap[rowTeamIndex];
+  const playerTeams = (player.Teams || []).map(normalizeString);
+  if (
+    !playerTeams.includes(normalizeString(rowTeam)) ||
+    !playerTeams.includes(normalizeString(colTeam))
+  ) {
+    window.alert("Jugador incorrecto para esta casilla");
+    return;
+  }
 
-    // Determine column team: find which team in first column aligns with this cell
-    const firstColIndices = [4, 8, 12];
-    const colTeamIndex = firstColIndices[Math.floor(idx / 4) - 1]; // map row to first column
-    const colTeam = teamsMap[colTeamIndex];
-
-    // Normalize
-    const playerTeamsNormalized = (player.Teams || []).map(normalizeString);
-    const rowTeamNorm = rowTeam ? normalizeString(rowTeam) : null;
-    const colTeamNorm = colTeam ? normalizeString(colTeam) : null;
-
-    // Validate player belongs to both teams if needed
-    if (
-      (rowTeamNorm && !playerTeamsNormalized.includes(rowTeamNorm)) ||
-      (colTeamNorm && !playerTeamsNormalized.includes(colTeamNorm))
-    ) {
-      window.alert("Jugador incorrecto para esta casilla");
-      return;
-    }
-
-    // Assign player
-    setPlayers((prev) => ({ ...prev, [selectedCell]: player }));
-    setSelectedCell(null);
-  };
+  setPlayers((prev) => ({ ...prev, [selectedCell]: player }));
+  setSelectedCell(null);
+};
 
   const handleReset = () => {
     setPlayers({});
@@ -72,6 +59,10 @@ export default function Main() {
         setTeamsMap={setTeamsMap}
       />
       <SearchBar onPlayerSelect={handlePlayerSelect} inputRef={inputRef} />
+      <HelpOptions
+        selectedCell={selectedCell}
+        teamsMap={teamsMap}
+      />
     </main>
   );
 }

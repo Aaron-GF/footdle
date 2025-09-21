@@ -280,7 +280,13 @@
     {
       "ID": 51,
       "Name": "Álvaro Morata",
-      "Teams": ["Real Madrid", "Juventus", "Chelsea", "Atlético Madrid", "AC Milan"]
+      "Teams": [
+        "Real Madrid",
+        "Juventus",
+        "Chelsea",
+        "Atlético Madrid",
+        "AC Milan"
+      ]
     },
     {
       "ID": 52,
@@ -355,7 +361,7 @@
     {
       "ID": 62,
       "Name": "Ivan Perišić",
-      "Teams": ["Bayern Munich", "Inter Milan"]
+      "Teams": ["Bayern Munich", "Inter Milan", "Borussia Dortmund", "Tottenham Hotspur"]
     },
     {
       "ID": 63,
@@ -909,7 +915,7 @@
     {
       "ID": 167,
       "Name": "Houssem Aouar",
-      "Teams": ["Lyon", "Arsenal", "Roma"]
+      "Teams": ["Lyon", "Roma"]
     },
     {
       "ID": 168,
@@ -1978,6 +1984,46 @@
       "ID": 376,
       "Name": "Álvaro Carreras",
       "Teams": ["Real Madrid", "Manchester United", "Benfica"]
+    },
+    {
+      "ID": 377,
+      "Name": "Kevin De Bruyne",
+      "Teams": ["Chelsea", "Manchester City", "Napoli"]
+    },
+    {
+      "ID": 378,
+      "Name": "Victor Lindelöf",
+      "Teams": ["Benfica", "Manchester United"]
+    },
+    {
+      "ID": 379,
+      "Name": "Mateo Politano",
+      "Teams": ["Inter Milan", "Napoli"]
+    },
+    {
+      "ID": 380,
+      "Name": "Ciro Immobile",
+      "Teams": ["Juventus", "Borussia Dortmund"]
+    },
+    {
+      "ID": 381,
+      "Name": "Tiago Mendes",
+      "Teams": ["Lyon", "Juventus", "Atlético Madrid", "Chelsea", "Benfica"]
+    },
+    {
+      "ID": 382,
+      "Name": "Mattia De Sciglio",
+      "Teams":["Juventus", "Lyon", "AC Milan"]
+    },
+    {
+      "ID": 383,
+      "Name": "Dejan Lovren",
+      "Teams":["Lyon", "Liverpool"]
+    },
+    {
+      "ID": 384,
+      "Name": "Milan Baroš",
+      "Teams":["Lyon", "Liverpool"]
     }
   ]
 }

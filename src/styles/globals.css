@@ -154,7 +154,6 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 .scroll-thin {
   -ms-overflow-style: thin; /* IE/Edge */
   scrollbar-width: thin; /* Firefox */
-  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Firefox */
 }
 
 .dark {

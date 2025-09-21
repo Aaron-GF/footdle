@@ -40,14 +40,14 @@ export default function HelpOptions({ selectedCell, teamsMap }) {
           Ayuda
         </Button>
       </AlertDialogTrigger>
-      <AlertDialogContent className="max-w-sm">
+      <AlertDialogContent className="max-w-sm max-h-8/10 h-full">
         <AlertDialogHeader>
           <AlertDialogTitle>Opciones disponibles</AlertDialogTitle>
           <p className="text-sm mt-2">
             Estos son los jugadores que puedes usar para esta celda.
           </p>
         </AlertDialogHeader>
-        <ul className="mt-4 space-y-2">
+        <ul className="mt-4 space-y-2 overflow-y-scroll scroll-thin">
           {options.length === 0 ? (
             <li className="text-sm text-muted-foreground">
               No hay opciones disponibles

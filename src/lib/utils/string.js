@@ -1,9 +1,3 @@
-/**
- * Normalize a search String:
-* - Turn tiny
-* - Eliminate accents and diacritics
- * @param {string} str
- * @returns {string}
- */
+// normaliza strings, quitando accentos, diacríticos y poniendolo en minúscula
 export const normalizeString = (str) => 
   str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();

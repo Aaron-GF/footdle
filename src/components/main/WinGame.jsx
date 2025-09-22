@@ -13,7 +13,7 @@ export default function WinGame({
 }) {
   const router = useRouter();
 
-  // comprueba cuántos jugadores hay en el tablero
+  // comprueba si el tablero esta completo
   const isWin = Object.keys(players).length === 9;
 
   // estado para el boton de prueba

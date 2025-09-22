@@ -2,7 +2,7 @@
 import { useState, useRef } from "react";
 import SearchBar from "@/components/main/SearchBar";
 import { normalizeString } from "@/lib/utils/string";
-import HelpOptions from "./HelpOptions";
+import HelpOptions from "@/components/main/HelpOptions";
 import WinGame from "@/components/main/WinGame";
 
 export default function Main() {

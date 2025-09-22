@@ -23,7 +23,7 @@ export async function POST(req) {
 
     jsonData.playersData.push(newPlayer);
 
-    // Convertir a JSON con indentación, pero arrays en una sola línea
+    // evita cambios bruscos en formato (players.json)
     const jsonString = JSON.stringify(jsonData, null, 2)
       .replace(/\[\s+([^\]]+?)\s+\]/gs, (_, p1) => `[${p1.replace(/\s+/g, " ")}]`);
 

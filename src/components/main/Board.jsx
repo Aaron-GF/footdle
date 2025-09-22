@@ -13,7 +13,7 @@ export default function Board({
 }) {
   const [teams, setTeams] = useState([]);
 
-  // shuffle teams only on client, avoid error on render
+  // empereja de manera aleatoria los equipos en el cliente, evita errores en renderizado
   useEffect(() => {
     setTeams(shuffleArray(teamsData));
   }, []);
@@ -94,7 +94,7 @@ export default function Board({
   const handleReset = () => {
     setTeams(shuffleArray(teams));
     onCellSelect?.(null); // deselecciona celda
-    onReset?.(); // clear players on parent
+    onReset?.(); 
   };
 
   return (

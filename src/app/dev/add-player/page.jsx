@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import teamsData from "@/app/data/teams"; // tu lista de equipos
+import teamsData from "@/app/data/teams"; 
 import { useRouter } from "next/navigation";
 
 export default function AddPlayerPage() {
@@ -10,7 +10,7 @@ export default function AddPlayerPage() {
   const [selectedTeams, setSelectedTeams] = useState([]);
   const [message, setMessage] = useState("");
 
-  // Solo renderizamos en desarrollo
+  // Solo renderiza en desarrollo
   if (process.env.NODE_ENV !== "development") return <p>Ruta solo en desarrollo</p>;
 
   const handleToggleTeam = (teamName) => {
@@ -21,10 +21,7 @@ export default function AddPlayerPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!name || selectedTeams.length === 0) {
-      setMessage("Rellena el nombre y selecciona al menos un equipo");
-      return;
-    }
+    if (!name || selectedTeams.length === 0) return;
 
     const res = await fetch("/api/add-player", {
       method: "POST",

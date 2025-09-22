@@ -4,10 +4,10 @@ import React from "react";
 export default function ReportForm() {
   const [result, setResult] = React.useState("");
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
+  const onSubmit = async (e) => {
+    e.preventDefault();
     setResult("Enviando....");
-    const formData = new FormData(event.target);
+    const formData = new FormData(e.target);
 
     formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
 
@@ -20,7 +20,7 @@ export default function ReportForm() {
 
     if (data.success) {
       setResult("Reporte enviado con éxito ✅");
-      event.target.reset();
+      e.target.reset();
     } else {
       console.log("Error", data);
       setResult(data.message);

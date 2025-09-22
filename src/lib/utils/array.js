@@ -1,3 +1,4 @@
+// ordena de manera aleatoria elementos de un array
 export function shuffleArray(arr) {
   return arr
     .map((a) => [Math.random(), a])

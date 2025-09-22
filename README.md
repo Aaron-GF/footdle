@@ -5,7 +5,7 @@
 Es un juego web interactivo inspirado en la dinámica de los juegos de **tic-tac-toe**, diseñado especialmente para aficionados al fútbol.  
 El objetivo principal del juego es completar un tablero utilizando conocimientos sobre jugadores de fútbol, tanto actuales como históricos.
 
-El proyecto permite a los usuarios seleccionar casillas del tablero y descubrir jugadores que han jugado en ambos equipos relacionados con esa posición, proporcionando así un desafío que combina estrategia y conocimiento deportivo. Incorpora funcionalidades adicionales como un sistema de **reportes de errores**, que permite notificar datos incorrectos o la ausencia de ciertos jugadores en la base de datos, y una opción de **ayuda**, que sugiere posibles respuestas para facilitar la finalización del juego en caso de dificultad.
+El proyecto permite a los usuarios seleccionar casillas del tablero y descubrir jugadores que han jugado en ambos equipos relacionados con esa posición. Incorpora funcionalidades adicionales como un sistema de **reportes de errores**, que permite notificar datos incorrectos o la ausencia de ciertos jugadores en la base de datos, y una opción de **ayuda**, que sugiere posibles respuestas para facilitar la finalización del juego en caso de dificultad.
 
 ---
 

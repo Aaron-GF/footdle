@@ -78,8 +78,8 @@ export default function Board({
     // celdas jugables
     for (let i = 5; i < 16; i++) {
       if ([4, 8, 12].includes(i)) continue; // saltar cabeceras
-      const colIndex = (i % 4) - 1; // 0..2
-      const rowIndex = Math.floor(i / 4) - 1; // 0..2
+      const colIndex = (i % 4) - 1; 
+      const rowIndex = Math.floor(i / 4) - 1; 
       const rowTeam = teams[colIndex]?.name;
       const colTeam = teams[rowIndex + 3]?.name;
       if (rowTeam && colTeam) {

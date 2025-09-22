@@ -6,19 +6,19 @@ import HelpOptions from "@/components/main/HelpOptions";
 import WinGame from "@/components/main/WinGame";
 
 export default function Main() {
-  const [selectedCell, setSelectedCell] = useState(null); // selected cell index (0..15) or null
-  const [players, setPlayers] = useState({}); // players on board: { [index]: playerObject }
-  const [teamsMap, setTeamsMap] = useState({}); // store teams for every cell
+  const [selectedCell, setSelectedCell] = useState(null); 
+  const [players, setPlayers] = useState({}); // guarda los jugadores del tablero: { [index]: playerObject }
+  const [teamsMap, setTeamsMap] = useState({}); // guarda equipos para cada celda
 
   const inputRef = useRef(null);
 
-  // click on board cell -> toggle selection
+  // maneja el click de la casilla que se selecciona 
   const handleCellSelect = (index) => {
     setSelectedCell((prev) => (prev === index ? null : index));
     inputRef.current?.focus();
   };
 
-  // when serchbar return player
+  // aviso para tener casilla seleccionada antes de colocar jugador
   const handlePlayerSelect = (player) => {
   if (selectedCell === null) {
     window.alert("Selecciona una casilla antes de asignar un jugador");

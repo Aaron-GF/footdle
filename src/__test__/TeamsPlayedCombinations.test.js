@@ -2,7 +2,7 @@ import { normalizeString } from "@/lib/utils/string.js";
 import data from "@/app/data/players.json";
 import teams from "@/app/data/teams.js";
 
-const playersData = data.playersData || [];
+const playersData = data.playersData || []; // para poder usar players.json importando directamente
 
 describe("Combinaciones de equipos", () => {
   it("debería haber al menos un jugador para cada combinación posible de equipos distintos", () => {

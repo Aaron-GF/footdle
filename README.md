@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FOOTDLE ⚽
 
-## Getting Started
+![Licencia](https://img.shields.io/badge/License-CC%20BY--NC-blue.svg)
 
-First, run the development server:
+Es un juego de futbol inspirado en los juegos de **tic-tac-toe**, donde el objetivo es **completar el tablero usando tus conocimientos de fútbol**. ¡Perfecto para fanáticos del fútbol! 🏆
 
+---
+
+## Tabla de Contenidos
+- [Demo](#demo)
+- [Características](#características)
+- [Tecnologías](#tecnologías)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Desafíos](#desafíos)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
+
+---
+
+## Demo
+Prueba el juego: [FOOTDLE ⚽](https://footdle-aa.vercel.app/)  
+
+---
+
+## Características
+- Dependiendo de la casilla que selecciones busca el jugador correspondiente, actual o historico, que ha jugado en ambos equipos.
+- Existe un boton para reportar errores en caso de encontrar algun fallo con un jugador que no corresponde, datos erroneos o jugadores que crees que deberían incluirse en la base de datos.
+- Ademas esta la opción de ayuda, para en caso de no ser capaz de completar el juego, mostrar las posibles opciones de jugadores de la casilla seleccionada
+
+---
+
+## Tecnologías
+- Next.js
+- Tailwind CSS
+- React
+- JavaScript (ES6)
+- Git/GitHub
+- Jest
+
+---
+
+## Instalación
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Aaron-GF/footdle.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Ve a la carpeta del proyecto:
+```bash
+cd footdle
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. Instala dependencias con pnpm:
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Inicia el servidor de desarrollo:
+```bash
+pnpm run dev
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Abre http://localhost:3000 en tu navegador para jugar.

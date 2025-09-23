@@ -13,17 +13,19 @@ describe("Combinaciones de equipos", () => {
         const teamA = normalizeString(teams[i].name);
         const teamB = normalizeString(teams[j].name);
 
-        const player = playersData.find((p) => {
+        const players = playersData.filter((p) => {
           if (!p.Teams) return false;
           const playerTeams = p.Teams.map(normalizeString);
           return playerTeams.includes(teamA) && playerTeams.includes(teamB);
         });
 
-        if (!player) {
+        if (players.length === 0) {
           console.log(`❌ No encontrado: ${teams[i].name} + ${teams[j].name}`);
           missingCombinations.push([teams[i].name, teams[j].name]);
         } else {
-          console.log(`✅ Ejemplo: ${teams[i].name} + ${teams[j].name} -> ${player.Name}`);
+          console.log(
+            `✅ ${teams[i].name} + ${teams[j].name} -> ${players.length} jugadores`
+          );
         }
       }
     }

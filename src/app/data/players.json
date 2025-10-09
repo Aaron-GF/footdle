@@ -1,5 +1,9 @@
 {
-  "playersData": [{ "ID": 1, "Name": "Cristiano Ronaldo", "Teams": [ "Manchester United", "Real Madrid", "Juventus", "Sporting CP"]
+  "playersData": [
+    {
+      "ID": 1,
+      "Name": "Cristiano Ronaldo",
+      "Teams": ["Manchester United", "Real Madrid", "Juventus", "Sporting CP"]
     },
     {
       "ID": 2,
@@ -9,7 +13,15 @@
     {
       "ID": 3,
       "Name": "Zlatan Ibrahimović",
-      "Teams": ["AC Milan", "PSG", "Manchester United", "Juventus", "FC Barcelona", "Inter Milan", "Ajax"]
+      "Teams": [
+        "AC Milan",
+        "PSG",
+        "Manchester United",
+        "Juventus",
+        "FC Barcelona",
+        "Inter Milan",
+        "Ajax"
+      ]
     },
     {
       "ID": 4,
@@ -149,7 +161,14 @@
     {
       "ID": 31,
       "Name": "Edgar Davids",
-      "Teams": ["Juventus", "FC Barcelona", "Ajax", "Inter Milan", "AC Milan", "Tottenham Hotspur"]
+      "Teams": [
+        "Juventus",
+        "FC Barcelona",
+        "Ajax",
+        "Inter Milan",
+        "AC Milan",
+        "Tottenham Hotspur"
+      ]
     },
     {
       "ID": 32,
@@ -209,12 +228,24 @@
     {
       "ID": 43,
       "Name": "Mario Mandžukić",
-      "Teams": ["Juventus", "Atlético Madrid", "Bayern Munich", "Borussia Dortmund", "AC Milan"]
+      "Teams": [
+        "Juventus",
+        "Atlético Madrid",
+        "Bayern Munich",
+        "Borussia Dortmund",
+        "AC Milan"
+      ]
     },
     {
       "ID": 44,
       "Name": "Ángel Di María",
-      "Teams": ["Real Madrid", "PSG", "Manchester United", "Juventus", "Benfica"]
+      "Teams": [
+        "Real Madrid",
+        "PSG",
+        "Manchester United",
+        "Juventus",
+        "Benfica"
+      ]
     },
     {
       "ID": 45,
@@ -249,22 +280,35 @@
     {
       "ID": 51,
       "Name": "Álvaro Morata",
-      "Teams": ["Real Madrid", "Juventus", "Chelsea", "Atlético Madrid", "AC Milan"]
+      "Teams": [
+        "Real Madrid",
+        "Juventus",
+        "Chelsea",
+        "Atlético Madrid",
+        "AC Milan"
+      ]
     },
     {
       "ID": 52,
       "Name": "Gonzalo Higuaín",
-      "Teams": ["Real Madrid", "Juventus", "Chelsea", "AC Milan"]
+      "Teams": ["Real Madrid", "Juventus", "Chelsea", "AC Milan", "Napoli"]
     },
     {
       "ID": 53,
       "Name": "James Rodríguez",
-      "Teams": ["Real Madrid", "Bayern Munich"]
+      "Teams": ["Real Madrid", "Bayern Munich", "Porto", "Monaco"]
     },
     {
       "ID": 54,
       "Name": "Alexis Sánchez",
-      "Teams": ["FC Barcelona", "Arsenal", "Inter Milan", "Manchester United", "Marseille", "Olympique Lyon"]
+      "Teams": [
+        "FC Barcelona",
+        "Arsenal",
+        "Inter Milan",
+        "Manchester United",
+        "Marseille",
+        "Olympique Lyon"
+      ]
     },
     {
       "ID": 55,
@@ -274,12 +318,25 @@
     {
       "ID": 56,
       "Name": "Pierre-Emerick Aubameyang",
-      "Teams": ["Arsenal", "Chelsea", "FC Barcelona", "Borussia Dortmund", "Monaco", "Marseille"]
+      "Teams": [
+        "Arsenal",
+        "Chelsea",
+        "FC Barcelona",
+        "Borussia Dortmund",
+        "Monaco",
+        "Marseille"
+      ]
     },
     {
       "ID": 57,
       "Name": "Henrikh Mkhitaryan",
-      "Teams": ["Manchester United", "Arsenal", "Inter Milan", "Roma", "Borussia Dortmund"]
+      "Teams": [
+        "Manchester United",
+        "Arsenal",
+        "Inter Milan",
+        "Roma",
+        "Borussia Dortmund"
+      ]
     },
     {
       "ID": 58,
@@ -304,7 +361,12 @@
     {
       "ID": 62,
       "Name": "Ivan Perišić",
-      "Teams": ["Bayern Munich", "Inter Milan", "Borussia Dortmund", "Tottenham Hotspur"]
+      "Teams": [
+        "Bayern Munich",
+        "Inter Milan",
+        "Borussia Dortmund",
+        "Tottenham Hotspur"
+      ]
     },
     {
       "ID": 63,
@@ -329,7 +391,13 @@
     {
       "ID": 67,
       "Name": "Javier Saviola",
-      "Teams": ["FC Barcelona", "Real Madrid", "Mónaco", "Benfica", "River Plate"]
+      "Teams": [
+        "FC Barcelona",
+        "Real Madrid",
+        "Mónaco",
+        "Benfica",
+        "River Plate"
+      ]
     },
     {
       "ID": 68,
@@ -339,7 +407,12 @@
     {
       "ID": 69,
       "Name": "Carlos Tevez",
-      "Teams": ["Manchester United", "Juventus", "Boca Juniors", "Manchester City"]
+      "Teams": [
+        "Manchester United",
+        "Juventus",
+        "Boca Juniors",
+        "Manchester City"
+      ]
     },
     {
       "ID": 70,
@@ -524,7 +597,13 @@
     {
       "ID": 107,
       "Name": "Mario Balotelli",
-      "Teams": ["Manchester City", "AC Milan", "Liverpool", "Inter Milan", "Marseille"]
+      "Teams": [
+        "Manchester City",
+        "AC Milan",
+        "Liverpool",
+        "Inter Milan",
+        "Marseille"
+      ]
     },
     {
       "ID": 108,
@@ -559,7 +638,12 @@
     {
       "ID": 114,
       "Name": "Kevin-Prince Boateng",
-      "Teams": ["AC Milan", "FC Barcelona", "Borussia Dortmund", "Tottenham Hotspur"]
+      "Teams": [
+        "AC Milan",
+        "FC Barcelona",
+        "Borussia Dortmund",
+        "Tottenham Hotspur"
+      ]
     },
     {
       "ID": 115,
@@ -574,12 +658,24 @@
     {
       "ID": 117,
       "Name": "Ricardo Quaresma",
-      "Teams": ["FC Barcelona", "Chelsea", "Inter Milan", "Porto", "Sporting CP"]
+      "Teams": [
+        "FC Barcelona",
+        "Chelsea",
+        "Inter Milan",
+        "Porto",
+        "Sporting CP"
+      ]
     },
     {
       "ID": 118,
       "Name": "Pepe Reina",
-      "Teams": ["Liverpool", "Bayern Munich", "AC Milan", "Napoli", "FC Barcelona"]
+      "Teams": [
+        "Liverpool",
+        "Bayern Munich",
+        "AC Milan",
+        "Napoli",
+        "FC Barcelona"
+      ]
     },
     {
       "ID": 119,
@@ -884,7 +980,14 @@
     {
       "ID": 179,
       "Name": "João Cancelo",
-      "Teams": ["Manchester City", "Juventus", "Inter Milan", "Benfica", "FC Barcelona", "Bayern Munich"]
+      "Teams": [
+        "Manchester City",
+        "Juventus",
+        "Inter Milan",
+        "Benfica",
+        "FC Barcelona",
+        "Bayern Munich"
+      ]
     },
     {
       "ID": 180,
@@ -1004,7 +1107,15 @@
     {
       "ID": 203,
       "Name": "Nicolas Anelka",
-      "Teams": ["Arsenal", "Real Madrid", "Chelsea", "Manchester City", "PSG", "Liverpool", "Juventus"]
+      "Teams": [
+        "Arsenal",
+        "Real Madrid",
+        "Chelsea",
+        "Manchester City",
+        "PSG",
+        "Liverpool",
+        "Juventus"
+      ]
     },
     {
       "ID": 204,
@@ -1029,7 +1140,13 @@
     {
       "ID": 208,
       "Name": "Patrick Vieira",
-      "Teams": ["Arsenal", "Juventus", "Inter Milan", "Manchester City", "AC Milan"]
+      "Teams": [
+        "Arsenal",
+        "Juventus",
+        "Inter Milan",
+        "Manchester City",
+        "AC Milan"
+      ]
     },
     {
       "ID": 209,
@@ -1429,7 +1546,13 @@
     {
       "ID": 288,
       "Name": "Emmanuel Adebayor",
-      "Teams": ["Arsenal", "Manchester City", "Tottenham Hotspur", "Real Madrid", "Monaco"]
+      "Teams": [
+        "Arsenal",
+        "Manchester City",
+        "Tottenham Hotspur",
+        "Real Madrid",
+        "Monaco"
+      ]
     },
     {
       "ID": 289,
@@ -1474,7 +1597,12 @@
     {
       "ID": 297,
       "Name": "Marcel Sabitzer",
-      "Teams": ["RB Leipzig", "Bayern Munich", "Manchester United", "Borussia Dortmund"]
+      "Teams": [
+        "RB Leipzig",
+        "Bayern Munich",
+        "Manchester United",
+        "Borussia Dortmund"
+      ]
     },
     {
       "ID": 298,
@@ -1649,7 +1777,13 @@
     {
       "ID": 332,
       "Name": "José Antonio Reyes",
-      "Teams": ["Arsenal", "Real Madrid", "Benfica", "Real Madrid", "Atlético Madrid"]
+      "Teams": [
+        "Arsenal",
+        "Real Madrid",
+        "Benfica",
+        "Real Madrid",
+        "Atlético Madrid"
+      ]
     },
     {
       "ID": 333,
@@ -1714,7 +1848,7 @@
     {
       "ID": 345,
       "Name": "Raphaël Guerreiro",
-      "Teams": ["Borussia Dortmund", "Sporting CP", "Lyon"]
+      "Teams": ["Borussia Dortmund", "Bayern Munich"]
     },
     {
       "ID": 346,
@@ -2013,8 +2147,8 @@
     },
     {
       "ID": 405,
-      "Name": "Maxwell",
-      "Teams": ["FC Barcelona", "PSG", "Inter Milan", "Ajax"]
+      "Name": "Giovani Lo Celso",
+      "Teams": ["Tottenham Hotspur", "PSG"]
     },
     {
       "ID": 406,
@@ -2035,6 +2169,46 @@
       "ID": 409,
       "Name": "Steven Pienaar",
       "Teams": ["Ajax", "Borussia Dortmund", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 410,
+      "Name": "David De Gea",
+      "Teams": ["Manchester United", "Atlético Madrid"]
+    },
+    {
+      "ID": 411,
+      "Name": "Fabio Cannavaro",
+      "Teams": ["Napoli", "Real Madrid", "Inter Milan", "Juventus"]
+    },
+    {
+      "ID": 412,
+      "Name": "Raúl Albiol",
+      "Teams": ["Napoli", "Real Madrid"]
+    },
+    {
+      "ID": 413,
+      "Name": "Lukas Podolski",
+      "Teams": ["Arsenal", "Bayern Munich", "Inter Milan"]
+    },
+    {
+      "ID": 414,
+      "Name": "Serge Aurier",
+      "Teams": ["PSG", "Tottenham Hotspur"]
+    },
+    {
+      "ID": 415,
+      "Name": "Paulo Sousa",
+      "Teams": ["Juventus", "Borussia Dortmund", "Inter Milan"]
+    },
+    {
+      "ID": 416,
+      "Name": "Willy Sagnol",
+      "Teams": ["Monaco", "Bayern Munich"]
+    },
+    {
+      "ID": 417,
+      "Name": "Fabio Grosso",
+      "Teams": ["Juventus", "Inter Milan", "Lyon"]
     }
   ]
 }

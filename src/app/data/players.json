@@ -3,12 +3,14 @@
     {
       "ID": 1,
       "Name": "Cristiano Ronaldo",
-      "Teams": ["Manchester United", "Real Madrid", "Juventus", "Sporting CP"]
+      "Teams": ["Manchester United", "Real Madrid", "Juventus", "Sporting CP"],
+      "Trophies": ["Golden ball", "Golden boot"]
     },
     {
       "ID": 2,
       "Name": "Lionel Messi",
-      "Teams": ["FC Barcelona", "PSG"]
+      "Teams": ["FC Barcelona", "PSG"],
+      "Trophies": ["Golden ball", "Golden boot"]
     },
     {
       "ID": 3,
@@ -41,17 +43,20 @@
     {
       "ID": 7,
       "Name": "Luis Suárez",
-      "Teams": ["FC Barcelona", "Liverpool", "Atlético Madrid", "Ajax"]
+      "Teams": ["FC Barcelona", "Liverpool", "Atlético Madrid", "Ajax"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 8,
       "Name": "Kaká",
-      "Teams": ["AC Milan", "Real Madrid"]
+      "Teams": ["AC Milan", "Real Madrid"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 9,
       "Name": "Karim Benzema",
-      "Teams": ["Real Madrid", "Lyon"]
+      "Teams": ["Real Madrid", "Lyon"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 10,
@@ -66,7 +71,8 @@
     {
       "ID": 12,
       "Name": "Thierry Henry",
-      "Teams": ["Arsenal", "FC Barcelona", "Juventus", "Monaco"]
+      "Teams": ["Arsenal", "FC Barcelona", "Juventus", "Monaco"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 13,
@@ -111,7 +117,8 @@
     {
       "ID": 21,
       "Name": "Robert Lewandowski",
-      "Teams": ["Bayern Munich", "Borussia Dortmund", "FC Barcelona"]
+      "Teams": ["Bayern Munich", "Borussia Dortmund", "FC Barcelona"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 22,
@@ -203,8 +210,8 @@
     {
       "ID": 38,
       "Name": "Luis Figo",
-      "Golden_ball": true,
-      "Teams": ["Real Madrid", "FC Barcelona", "Inter Milan", "Sporting CP"]
+      "Teams": ["Real Madrid", "FC Barcelona", "Inter Milan", "Sporting CP"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 39,
@@ -219,8 +226,8 @@
     {
       "ID": 41,
       "Name": "Luka Modrić",
-      "Golden_ball": true,
-      "Teams": ["Real Madrid", "Tottenham Hotspur", "AC Milan"]
+      "Teams": ["Real Madrid", "Tottenham Hotspur", "AC Milan"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 42,
@@ -424,7 +431,8 @@
     {
       "ID": 71,
       "Name": "Diego Forlán",
-      "Teams": ["Atlético Madrid", "Inter Milan", "Manchester United"]
+      "Teams": ["Atlético Madrid", "Inter Milan", "Manchester United"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 72,
@@ -444,8 +452,8 @@
     {
       "ID": 75,
       "Name": "Michael Owen",
-      "Golden_ball": true,
-      "Teams": ["Liverpool", "Manchester United", "Real Madrid"]
+      "Teams": ["Liverpool", "Manchester United", "Real Madrid"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 76,
@@ -475,12 +483,14 @@
     {
       "ID": 81,
       "Name": "Kylian Mbappé",
-      "Teams": ["PSG", "Monaco", "Real Madrid"]
+      "Teams": ["PSG", "Monaco", "Real Madrid"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 82,
       "Name": "Erling Haaland",
-      "Teams": ["Manchester City", "Borussia Dortmund"]
+      "Teams": ["Manchester City", "Borussia Dortmund"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 83,
@@ -500,8 +510,8 @@
     {
       "ID": 86,
       "Name": "Andrey Shevchenko",
-      "Golden_ball": true,
-      "Teams": ["Chelsea", "AC Milan", "Monaco"]
+      "Teams": ["Chelsea", "AC Milan", "Monaco"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 87,
@@ -511,8 +521,8 @@
     {
       "ID": 88,
       "Name": "Ronaldo Nazário",
-      "Golden_ball": true,
-      "Teams": ["Real Madrid", "FC Barcelona", "Inter Milan", "AC Milan"]
+      "Teams": ["Real Madrid", "FC Barcelona", "Inter Milan", "AC Milan"],
+      "Trophies": ["Golden ball", "Golden boot"]
     },
     {
       "ID": 89,
@@ -567,7 +577,8 @@
     {
       "ID": 100,
       "Name": "Rodri",
-      "Teams": ["Manchester City", "Atlético Madrid"]
+      "Teams": ["Manchester City", "Atlético Madrid"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 101,
@@ -1082,7 +1093,8 @@
     {
       "ID": 197,
       "Name": "Harry Kane",
-      "Teams": ["Tottenham Hotspur", "Bayern Munich"]
+      "Teams": ["Tottenham Hotspur", "Bayern Munich"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 198,
@@ -1097,8 +1109,8 @@
     {
       "ID": 200,
       "Name": "Zinedine Zidane",
-      "Golden_ball": true,
-      "Teams": ["Real Madrid", "Juventus"]
+      "Teams": ["Real Madrid", "Juventus"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 201,
@@ -1131,8 +1143,8 @@
     {
       "ID": 205,
       "Name": "Marco Van Basten",
-      "Golden_ball": true,
-      "Teams": ["AC Milan", "Ajax"]
+      "Teams": ["AC Milan", "Ajax"],
+      "Trophies": ["Golden ball", "Golden boot"]
     },
     {
       "ID": 206,
@@ -1168,8 +1180,8 @@
     {
       "ID": 211,
       "Name": "Johan Cruyff",
-      "Golden_ball": true,
-      "Teams": ["FC Barcelona", "Ajax"]
+      "Teams": ["FC Barcelona", "Ajax"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 212,
@@ -1272,11 +1284,6 @@
       "Teams": ["Chelsea", "Manchester City", "Napoli"]
     },
     {
-      "ID": 233,
-      "Name": "Marcos Reus",
-      "Teams": ["Borussia Dortmund", "Bayern Munich"]
-    },
-    {
       "ID": 234,
       "Name": "Giovanni Dos Santos",
       "Teams": ["FC Barcelona", "Tottenham Hotspur"]
@@ -1294,7 +1301,8 @@
     {
       "ID": 237,
       "Name": "Ousmané Dembélé",
-      "Teams": ["FC Barcelona", "Borussia Dortmund", "PSG"]
+      "Teams": ["FC Barcelona", "Borussia Dortmund", "PSG"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 238,
@@ -1344,8 +1352,8 @@
     {
       "ID": 247,
       "Name": "Ronaldinho",
-      "Golden_ball": true,
-      "Teams": ["FC Barcelona", "AC Milan", "PSG"]
+      "Teams": ["FC Barcelona", "AC Milan", "PSG"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 248,
@@ -2027,7 +2035,8 @@
     {
       "ID": 380,
       "Name": "Ciro Immobile",
-      "Teams": ["Juventus", "Borussia Dortmund"]
+      "Teams": ["Juventus", "Borussia Dortmund"],
+      "Trophies": ["Golden boot"]
     },
     {
       "ID": 381,
@@ -2082,8 +2091,8 @@
     {
       "ID": 391,
       "Name": "Lothar Matthäus",
-      "Golden_ball": true,
-      "Teams": ["Inter Milan", "Bayern Munich"]
+      "Teams": ["Inter Milan", "Bayern Munich"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 392,
@@ -2178,8 +2187,8 @@
     {
       "ID": 410,
       "Name": "Fabio Cannavaro",
-      "Golden_ball": true,
-      "Teams": ["Napoli", "Real Madrid", "Inter Milan", "Juventus"]
+      "Teams": ["Napoli", "Real Madrid", "Inter Milan", "Juventus"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 411,
@@ -2229,8 +2238,8 @@
     {
       "ID": 420,
       "Name": "Ruud Gullit",
-      "Golden_ball": true,
-      "Teams": ["AC Milan", "Chelsea"]
+      "Teams": ["AC Milan", "Chelsea"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 421,
@@ -2260,8 +2269,8 @@
     {
       "ID": 426,
       "Name": "Rivaldo",
-      "Golden_ball": true,
-      "Teams": ["FC Barcelona", "AC Milan"]
+      "Teams": ["FC Barcelona", "AC Milan"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 427,
@@ -2416,128 +2425,146 @@
     {
       "ID": 457,
       "Name": "Alfredo Di Stéfano",
-      "Golden_ball": true,
-      "Teams": ["Real Madrid"]
+      "Teams": ["Real Madrid"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 458,
       "Name": "Raymond Kopa",
-      "Golden_ball": true,
-      "Teams": ["Real Madrid"]
+      "Teams": ["Real Madrid"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 459,
       "Name": "Luis Suárez Miramontes",
-      "Golden_ball": true,
-      "Teams": ["FC Barcelona", "Inter Milan"]
+      "Teams": ["FC Barcelona", "Inter Milan"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 460,
       "Name": "Omar Sívori",
-      "Golden_ball": true,
-      "Teams": ["Juventus", "Napoli"]
+      "Teams": ["Juventus", "Napoli"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 461,
       "Name": "Denis Law",
-      "Golden_ball": true,
-      "Teams": ["Manchester United", "Manchester City"]
+      "Teams": ["Manchester United", "Manchester City"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 462,
       "Name": "Eusébio",
-      "Golden_ball": true,
-      "Teams": ["Benfica"]
+      "Teams": ["Benfica"],
+      "Trophies": ["Golden ball", "Golden boot"]
     },
     {
       "ID": 463,
       "Name": "Bobby Charlton",
-      "Golden_ball": true,
-      "Teams": ["Manchester United"]
+      "Teams": ["Manchester United"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 464,
       "Name": "George Best",
-      "Golden_ball": true,
-      "Teams": ["Manchester United"]
+      "Teams": ["Manchester United"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 465,
       "Name": "Gianni Rivera",
-      "Golden_ball": true,
-      "Teams": ["AC Milan"]
+      "Teams": ["AC Milan"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 466,
       "Name": "Gerd Müller",
-      "Golden_ball": true,
-      "Teams": ["Bayern Munich"]
+      "Teams": ["Bayern Munich"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 467,
       "Name": "Franz Beckenbauer",
-      "Golden_ball": true,
-      "Teams": ["Bayern Munich"]
+      "Teams": ["Bayern Munich"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 468,
       "Name": "Allan Simonsen",
-      "Golden_ball": true,
-      "Teams": ["FC Barcelona"]
+      "Teams": ["FC Barcelona"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 469,
       "Name": "Kevin Keegan",
-      "Golden_ball": true,
-      "Teams": ["Liverpool"]
+      "Teams": ["Liverpool"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 470,
       "Name": "Karl-Heinz Rummenigge",
-      "Golden_ball": true,
-      "Teams": ["Bayern Munich", "Inter Milan"]
+      "Teams": ["Bayern Munich", "Inter Milan"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 471,
       "Name": "Paolo Rossi",
-      "Golden_ball": true,
-      "Teams": ["Juventus", "AC Milan"]
+      "Teams": ["Juventus", "AC Milan"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 472,
       "Name": "Michel Platini",
-      "Golden_ball": true,
-      "Teams": ["Juventus"]
+      "Teams": ["Juventus"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 473,
       "Name": "Jean-Pierre Papin",
-      "Golden_ball": true,
-      "Teams": ["AC Milan", "Marseille"]
+      "Teams": ["AC Milan", "Marseille"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 474,
       "Name": "Hristo Stoichkov",
-      "Golden_ball": true,
-      "Teams": ["FC Barcelona"]
+      "Teams": ["FC Barcelona"],
+      "Trophies": ["Golden ball", "Golden boot"]
     },
     {
       "ID": 475,
       "Name": "George Weah",
-      "Golden_ball": true,
-      "Teams": ["AC Milan", "Chelsea", "Manchester City", "PSG", "Monaco"]
+      "Teams": ["AC Milan", "Chelsea", "Manchester City", "PSG", "Monaco"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 476,
       "Name": "Matthias Sammer",
-      "Golden_ball": true,
-      "Teams": ["Borussia Dortmund", "Inter Milan"]
+      "Teams": ["Borussia Dortmund", "Inter Milan"],
+      "Trophies": ["Golden ball"]
     },
     {
       "ID": 477,
       "Name": "Pavel Nedved",
-      "Golden_ball": true,
-      "Teams": ["Juventus"]
+      "Teams": ["Juventus"],
+      "Trophies": ["Golden ball"]
+    },
+    {
+      "ID": 478,
+      "Name": "Francesco Totti",
+      "Teams": ["Roma"],
+      "Trophies": ["Golden boot"]
+    },
+    {
+      "ID": 479,
+      "Name": "Luca Toni",
+      "Teams": ["Bayern Munich", "Juventus", "Roma"],
+      "Trophies": ["Golden boot"]
+    },
+    {
+      "ID": 480,
+      "Name": "Roy Makaay",
+      "Teams": ["Bayern Munich"],
+      "Trophies": ["Golden boot"]
     }
   ]
 }

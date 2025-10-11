@@ -78,8 +78,8 @@ export default function Board({
     // celdas jugables
     for (let i = 5; i < 16; i++) {
       if ([4, 8, 12].includes(i)) continue; // saltar cabeceras
-      const colIndex = (i % 4) - 1; 
-      const rowIndex = Math.floor(i / 4) - 1; 
+      const colIndex = (i % 4) - 1;
+      const rowIndex = Math.floor(i / 4) - 1;
       const rowTeam = teams[colIndex]?.name;
       const colTeam = teams[rowIndex + 3]?.name;
       if (rowTeam && colTeam) {
@@ -94,7 +94,7 @@ export default function Board({
   const handleReset = () => {
     setTeams(shuffleArray(teams));
     onCellSelect?.(null); // deselecciona celda
-    onReset?.(); 
+    onReset?.();
   };
 
   return (

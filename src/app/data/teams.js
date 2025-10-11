@@ -20,7 +20,7 @@ const teams = [
   { name: "Inter Milan", logo: "/teams-shields/inter-milan.png" },
 
   // Bundesliga
-  /* { name: "RB Leipzig", logo: "/teams-shields/leipzig.png" }, */ 
+  /* { name: "RB Leipzig", logo: "/teams-shields/leipzig.png" }, */
   { name: "Bayern Munich", logo: "/teams-shields/bayern-munich.png" },
   { name: "Borussia Dortmund", logo: "/teams-shields/borussia-dortmund.png" },
 
@@ -37,6 +37,12 @@ const teams = [
 
   // Eredivise
   { name: "Ajax", logo: "/teams-shields/ajax.png" },
+
+  // Balon de oro
+  /* { name: "Golden_ball", logo: "/trophies/golden-ball.png" }, */
+
+  // Bota de oro
+  /* { name: "Golden_boot", logo: "/trophies/golden-boot.png" }, */
 ];
 
 export default teams;

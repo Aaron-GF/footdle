@@ -31,15 +31,31 @@ export default function SearchBar({ onPlayerSelect, inputRef }) {
         handleSelect(filteredPlayers[0]); // selecciona la primera sugerencia
       }
     }
-  }
+  };
 
   return (
     <div className="flex flex-col gap-2 mb-50">
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex items-center gap-3 bg-color1 p-3 rounded-4xl w-full cursor-pointer"
+        className="flex items-center gap-3 bg-color1 p-3 rounded-4xl w-full"
       >
-        <Search className="text-main" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="text-main cursor-pointer"
+        >
+          <circle cx="10" cy="7" r="4" />
+          <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
+          <circle cx="17" cy="17" r="3" />
+          <path d="m21 21-1.9-1.9" />
+        </svg>
         <input
           ref={inputRef}
           type="search"
@@ -61,7 +77,7 @@ export default function SearchBar({ onPlayerSelect, inputRef }) {
               <div
                 key={player.ID}
                 onClick={() => handleSelect(player)}
-                className="flex items-center gap-3 hover:bg-main/60 transition duration-300 p-3 text-bg font-bold cursor-pointer rounded-xl"
+                className="flex items-center gap-3 hover:bg-main/60 transition duration-300 p-3 text-background font-bold cursor-pointer rounded-xl"
               >
                 <span>{player.Name}</span>
               </div>

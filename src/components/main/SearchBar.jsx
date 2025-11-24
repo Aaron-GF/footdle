@@ -37,7 +37,7 @@ export default function SearchBar({ onPlayerSelect, inputRef }) {
     <div className="flex flex-col gap-2 mb-50">
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex items-center gap-3 bg-color1 p-3 rounded-4xl w-full"
+        className="flex items-center gap-3 bg-secondary p-3 rounded-4xl w-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export default function SearchBar({ onPlayerSelect, inputRef }) {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-main cursor-pointer"
+          className="text-primary cursor-pointer"
         >
           <circle cx="10" cy="7" r="4" />
           <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
@@ -63,23 +63,25 @@ export default function SearchBar({ onPlayerSelect, inputRef }) {
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Busca el jugador..."
-          className="w-full outline-none text-main font-bold"
+          className="w-full outline-none text-primary font-bold"
         />
       </form>
 
       {/* Dropdown */}
       {query.length > 2 && (
-        <div className="bg-main/80 rounded-xl shadow-lg max-h-60 overflow-y-auto scroll-thin">
+        <div className="bg-primary/80 rounded-xl shadow-lg max-h-60 overflow-y-auto">
           {filteredPlayers.length === 0 ? (
-            <p className="p-3 text-bg font-bold text-sm">Sin resultados</p>
+            <p className="p-3 text-background font-bold text-sm">
+              Sin resultados
+            </p>
           ) : (
             filteredPlayers.map((player) => (
               <div
                 key={player.ID}
                 onClick={() => handleSelect(player)}
-                className="flex items-center gap-3 hover:bg-main/60 transition duration-300 p-3 text-background font-bold cursor-pointer rounded-xl"
+                className="flex items-center gap-3 hover:bg-primary/60 transition duration-300 p-3 font-bold cursor-pointer rounded-xl"
               >
-                <span>{player.Name}</span>
+                <span className="text-background">{player.Name}</span>
               </div>
             ))
           )}

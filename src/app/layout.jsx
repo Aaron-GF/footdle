@@ -1,14 +1,9 @@
-import { Geist, Geist_Mono, Bungee } from "next/font/google";
+import { Roboto, Bungee } from "next/font/google";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/next"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -27,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bungee.variable} antialiased`}
+        className={`${roboto.variable} ${bungee.variable} antialiased`}
       >
         {children}
         <Analytics />

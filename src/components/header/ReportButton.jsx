@@ -1,39 +1,47 @@
 "use client";
-import {
-  AlertDialog,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import ReportForm from "@/components/ReportForm";
 
-export default function ReportErrorApp() {
+export default function ReportButton() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <AlertDialog>
-      <AlertDialogTrigger asChild>
-        <Button variant="outline" className="text-red-500">
-          Reportar error
-        </Button>
-      </AlertDialogTrigger>
-      <AlertDialogContent>
-        {/* botón de cerrar arriba a la derecha */}
-        <AlertDialogCancel
-          className="absolute right-2 top-2 rounded-full hover:bg-stone-200 dark:hover:bg-stone-800 w-3"
+    <>
+      <button
+        onClick={() => setIsOpen(true)}
+        className="px-4 py-2 border-2 border-red-500/50 text-red-500 font-medium rounded-lg hover:bg-red-500/10 transition-all"
+      >
+        ⚠️ Reportar error
+      </button>
+
+      {isOpen && (
+        <div
+          onClick={(e) => e.target === e.currentTarget && setIsOpen(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
         >
-          ✖
-        </AlertDialogCancel>
-        <AlertDialogHeader>
-          <AlertDialogTitle>⚠️ Reportar un error</AlertDialogTitle>
-        </AlertDialogHeader>
-        <ReportForm />
-        <AlertDialogFooter>
-          <AlertDialogCancel className="w-full">Cancelar</AlertDialogCancel>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+          <div className="bg-background rounded-xl shadow-2xl border border-foreground/10 p-6 max-w-md w-full max-h-[80vh] overflow-y-auto">
+            <header className="flex items-center justify-between mb-4">
+              <h2 className="text-2xl font-bold">⚠️ Reportar un error</h2>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-foreground/60 hover:text-foreground transition p-2 rounded-full hover:bg-foreground/10"
+                aria-label="Cerrar"
+              >
+                ✕
+              </button>
+            </header>
+
+            <ReportForm />
+
+            <button
+              onClick={() => setIsOpen(false)}
+              className="w-full px-4 py-2 mt-4 border-2 border-foreground/20 font-medium rounded-lg hover:bg-foreground/10 transition-all"
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
